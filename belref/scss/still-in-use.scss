@@ -1,3 +1,63 @@
+@import "variables";
 .still-in-use {
   padding: 2rem 2rem;
+  font-family: Tahoma, serif;
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    padding: 2rem 11rem;
+  }
+  .still-in-use--item {
+    .center-h2 {
+      padding-bottom: 1.5rem;
+      color: #333333;
+      line-height: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      .blue-ab {
+        color: $general-theme-color;
+      }
+    }
+  }
 }
+  #gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    button {
+      color: white;
+      font-size: 1rem;
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 10px;
+      border: solid $general-theme-color;
+      border-radius: 50%;
+      padding: 0.8rem 0.8rem;
+      background-color: $general-theme-color;
+      transition: 0.2ms;
+    }
+    .button:hover {
+      padding: 1.2rem 1.2rem;
+    }
+    .button:focus {
+      padding: 1.2rem 1.2rem;
+    }
+    #prev{
+      left: -1rem;
+    }
+    #next{
+      right: -1rem;
+    }
+  }
+
+  #image {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+      height: 320px;
+    }
+  }
+
+

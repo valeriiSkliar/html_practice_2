@@ -1,0 +1,29 @@
+footer {
+  height: fit-content;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+footer img {
+  max-width: 120px;
+  margin: auto;
+}
+footer p {
+  margin-top: 35px;
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+.main-links {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.main-links a {
+  text-decoration: none;
+  color: #555555;
+}
+
+/*# sourceMappingURL=footer.css.map */

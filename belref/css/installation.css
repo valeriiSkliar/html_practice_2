@@ -2,13 +2,26 @@
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .installation {
+    padding: 2rem 11rem;
+  }
+}
 .installation .service-card-core .service-card-core__service .service--heading {
+  padding-bottom: 1.5rem;
   color: #333333;
-  font-weight: 600;
+  line-height: 1.5rem;
+  font-weight: 700;
   text-align: center;
 }
 .installation .service-card-core .service-card-core__service .service--heading .blue-ab {
-  color: #469af4;
+  color: rgb(70, 154, 244);
+}
+.installation .service-card-core .service-card-core__service .service-card-core__text-block {
+  font-size: 0.8rem;
+  color: #888888;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .service-card-core__parts {
@@ -22,18 +35,41 @@
   width: 150px;
   height: 150px;
   background-image: url(".././img/service_key.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service-card-core__parts .gearwheel2 {
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
+  left: 0.1rem;
+  bottom: 0.8rem;
   background-image: url(".././img/tool_1.png");
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .service-card-core__parts .gearwheel2 {
+    left: 7rem;
+  }
+}
 .service-card-core__parts .gearwheel1 {
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
+  right: 0.1rem;
+  top: 0.8rem;
   background-image: url(".././img/service_wheel_3.png");
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .service-card-core__parts .gearwheel1 {
+    right: 7rem;
+  }
 }
 
 /*# sourceMappingURL=installation.css.map */

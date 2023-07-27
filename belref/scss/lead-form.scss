@@ -1,0 +1,63 @@
+@import "variables";
+
+.lead-form {
+  background-color: $general-theme-secondary-color;
+  font-family: Tahoma, serif;
+  text-align: center;
+  border: #eaeaea;
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    padding: 2rem 11rem;
+  }
+  .form-container {
+    padding: 2rem 2rem;
+    .lead-form--TestDriven {
+      .testdriveh2 {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+        color: #333333;
+        line-height: 1.5rem;
+        font-weight: 700;
+        .blue-ab {
+          color: $general-theme-color;
+        }
+      }
+      div {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #999999;
+        margin-bottom: 1.2rem;
+      }
+      .lead-links {
+        display: flex;
+        flex-direction: column;
+        .phonenumber {
+          color: $general-theme-color;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+        .callback, .e-mail{
+          color: #555555;
+          font-size: small;
+          line-height: 10px;
+        }
+      }
+    }
+  }
+  .lead-form--form-block {
+    padding: 0.4rem 0.2rem;
+    background-color: white;
+    #wf-form-question-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      input, textarea {
+        width: 100%;
+      }
+    }
+  }
+}
+.success-message, .w-form-fail{
+  display: none;
+}

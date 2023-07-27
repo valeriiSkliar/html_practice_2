@@ -13,16 +13,24 @@ header {
   border-bottom: #999999 1px solid;
 }
 header .headMenu, header logo, header contact-phone {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 header .headMenu {
   order: 2;
   flex-grow: 3;
-  display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .headMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+  }
 }
 header .logo {
   order: 1;
@@ -34,14 +42,35 @@ header .logo img {
 }
 header .contact-phone {
   flex-grow: 1;
-  font-size: 0.9rem;
   cursor: pointer;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
 }
 header .contact-phone a p {
   display: none;
+  color: rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone a p {
+    display: block;
+  }
 }
 header .contact-phone a img {
   max-width: 35px;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone a img {
+    display: none;
+  }
 }
 header .header-item:nth-child(1) {
   order: 4;
@@ -49,7 +78,12 @@ header .header-item:nth-child(1) {
 header .header-item:nth-child(2) {
   order: 1;
 }
+header .header-item:nth-child(3) {
+  order: 2;
+}
 header .header-item:nth-child(4) {
+  font-size: 1rem;
+  font-weight: 600;
   order: 2;
 }
 

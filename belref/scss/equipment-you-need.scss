@@ -9,6 +9,9 @@
   gap: 2rem;
   justify-content: center;
   text-align: center;
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    padding: 2rem 11rem;
+  }
   .equipment-you-need--item__header {
     color: #555236;
   }
@@ -25,20 +28,24 @@
     gap: 2rem;
   }
   .equipment-you-need--item__help{
+    border-radius: 1rem;
+    line-height: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 0;
-    background-color: $general-theme-color;
+    padding: 2rem 0;
+    margin-top: 50px;
+    background-color: $general-theme-secondary-color;
     .equipment-you-need--item__help__header{
-      color: white;
+      color: #343434;
       padding: 2rem 0;
       font-size: 1.3rem;
+      font-weight: 600;
     }
     .equipment-you-need--item__help__description {
-      color: #222222;
-      font-size: 0.9rem;
+      color: #656565;
+      font-size: 0.99rem;
       padding: 0 1rem;
       margin-bottom: 30px;
       max-width: 80%;
@@ -51,7 +58,6 @@
         color: white;
         width: fit-content;
         @extend .button-details;
-        background-color: #bdbbbb;
         border-radius: 0.5rem;
       }
     }
@@ -72,6 +78,10 @@
     font-weight: 600;
   }
   .equipment-list-item__description{
+    padding: 0.6rem 0;
+    margin: auto;
+    width: 85%;
+    line-height: 1.3rem;
     font-weight: 400;
     font-size: 0.8rem;
   }

@@ -13,16 +13,24 @@ header {
   border-bottom: #999999 1px solid;
 }
 header .headMenu, header logo, header contact-phone {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 header .headMenu {
   order: 2;
   flex-grow: 3;
-  display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .headMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+  }
 }
 header .logo {
   order: 1;
@@ -34,14 +42,35 @@ header .logo img {
 }
 header .contact-phone {
   flex-grow: 1;
-  font-size: 0.9rem;
   cursor: pointer;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
 }
 header .contact-phone a p {
   display: none;
+  color: rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone a p {
+    display: block;
+  }
 }
 header .contact-phone a img {
   max-width: 35px;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  header .contact-phone a img {
+    display: none;
+  }
 }
 header .header-item:nth-child(1) {
   order: 4;
@@ -49,10 +78,14 @@ header .header-item:nth-child(1) {
 header .header-item:nth-child(2) {
   order: 1;
 }
-header .header-item:nth-child(4) {
+header .header-item:nth-child(3) {
   order: 2;
 }
-
+header .header-item:nth-child(4) {
+  font-size: 1rem;
+  font-weight: 600;
+  order: 2;
+}
 #burger-menu {
   display: flex;
   flex-direction: column;
@@ -63,6 +96,11 @@ header .header-item:nth-child(4) {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #burger-menu {
+    display: none;
+  }
 }
 #burger-menu span {
   width: 2rem;
@@ -77,19 +115,78 @@ header .header-item:nth-child(4) {
 nav {
   display: none;
 }
-
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.show {
-  display: flex !important;
-  flex-direction: column;
+nav a {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-shadow: #777777 5px 0.2px 15px;
+  text-decoration: none;
+  color: #bdbbbb;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  nav a {
+    color: #222222;
+    padding: 0.8rem 0.9rem;
+    font-size: 0.8rem;
+    text-shadow: none;
+    margin-top: 25px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    z-index: 999;
+  }
+}
+
+#menu {
   position: absolute;
-  top: 100px;
-  background-color: #b3d4fc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 3;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 }
 
 .company-overview {
@@ -101,6 +198,11 @@ nav a {
   text-align: center;
   font-family: Tahoma, serif;
   padding: 5rem 2rem;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview {
+    flex-direction: row;
+  }
 }
 .company-overview .company-overview__item--left {
   margin-top: 1rem;
@@ -137,8 +239,20 @@ nav a {
   font-weight: 700;
 }
 
-.company-overview-image__item--refrigerator {
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview-image {
+    position: relative;
+  }
+}
+.company-overview-image .company-overview-image__item--refrigerator {
   display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview-image .company-overview-image__item--refrigerator {
+    max-width: 150px;
+    position: absolute;
+    display: block;
+  }
 }
 
 .services-modal {
@@ -168,7 +282,7 @@ nav a {
 }
 
 .present {
-  background-color: #469af4;
+  background-color: rgb(70, 154, 244);
   position: relative;
   width: 100%;
   height: 15rem;
@@ -179,6 +293,16 @@ nav a {
   flex-wrap: wrap;
   color: white;
   justify-content: flex-end;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .present {
+    height: 23rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
 }
 .present img {
   position: absolute;
@@ -188,11 +312,13 @@ nav a {
   width: 30%;
   margin: auto;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .present img {
+    top: -3rem;
+  }
+}
 .present p {
   text-align: center;
-  letter-spacing: 1px;
-  line-height: 25px;
-  font-weight: 600;
 }
 .present p b {
   background-color: white;
@@ -218,6 +344,11 @@ nav a {
   justify-content: center;
   text-align: center;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .equipment-you-need {
+    padding: 2rem 11rem;
+  }
+}
 .equipment-you-need .equipment-you-need--item__header {
   color: #555236;
 }
@@ -234,21 +365,25 @@ nav a {
   gap: 2rem;
 }
 .equipment-you-need .equipment-you-need--item__help {
+  border-radius: 1rem;
+  line-height: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;
-  background-color: #469af4;
+  padding: 2rem 0;
+  margin-top: 50px;
+  background-color: #f5f5f5;
 }
 .equipment-you-need .equipment-you-need--item__help .equipment-you-need--item__help__header {
-  color: white;
+  color: #343434;
   padding: 2rem 0;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 .equipment-you-need .equipment-you-need--item__help .equipment-you-need--item__help__description {
-  color: #222222;
-  font-size: 0.9rem;
+  color: #656565;
+  font-size: 0.99rem;
   padding: 0 1rem;
   margin-bottom: 30px;
   max-width: 80%;
@@ -259,7 +394,6 @@ nav a {
 .equipment-you-need .equipment-you-need--item__help a div {
   color: white;
   width: fit-content;
-  background-color: #bdbbbb;
   border-radius: 0.5rem;
 }
 
@@ -279,6 +413,10 @@ nav a {
   font-weight: 600;
 }
 .equipment-list--item .equipment-list-item__description {
+  padding: 0.6rem 0;
+  margin: auto;
+  width: 85%;
+  line-height: 1.3rem;
   font-weight: 400;
   font-size: 0.8rem;
 }
@@ -302,13 +440,26 @@ nav a {
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .installation {
+    padding: 2rem 11rem;
+  }
+}
 .installation .service-card-core .service-card-core__service .service--heading {
+  padding-bottom: 1.5rem;
   color: #333333;
-  font-weight: 600;
+  line-height: 1.5rem;
+  font-weight: 700;
   text-align: center;
 }
 .installation .service-card-core .service-card-core__service .service--heading .blue-ab {
-  color: #469af4;
+  color: rgb(70, 154, 244);
+}
+.installation .service-card-core .service-card-core__service .service-card-core__text-block {
+  font-size: 0.8rem;
+  color: #888888;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .service-card-core__parts {
@@ -322,22 +473,196 @@ nav a {
   width: 150px;
   height: 150px;
   background-image: url(".././img/service_key.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service-card-core__parts .gearwheel2 {
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
+  left: 0.1rem;
+  bottom: 0.8rem;
   background-image: url(".././img/tool_1.png");
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .service-card-core__parts .gearwheel2 {
+    left: 7rem;
+  }
+}
 .service-card-core__parts .gearwheel1 {
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
+  right: 0.1rem;
+  top: 0.8rem;
   background-image: url(".././img/service_wheel_3.png");
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .service-card-core__parts .gearwheel1 {
+    right: 7rem;
+  }
 }
 
 .still-in-use {
   padding: 2rem 2rem;
+  font-family: Tahoma, serif;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .still-in-use {
+    padding: 2rem 11rem;
+  }
+}
+.still-in-use .still-in-use--item .center-h2 {
+  padding-bottom: 1.5rem;
+  color: #333333;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.still-in-use .still-in-use--item .center-h2 .blue-ab {
+  color: rgb(70, 154, 244);
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#gallery button {
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px;
+  border: solid rgb(70, 154, 244);
+  border-radius: 50%;
+  padding: 0.8rem 0.8rem;
+  background-color: rgb(70, 154, 244);
+  transition: 0.2ms;
+}
+#gallery .button:hover {
+  padding: 1.2rem 1.2rem;
+}
+#gallery .button:focus {
+  padding: 1.2rem 1.2rem;
+}
+#gallery #prev {
+  left: -1rem;
+}
+#gallery #next {
+  right: -1rem;
+}
+
+#image {
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #image {
+    height: 320px;
+  }
+}
+
+.lead-form {
+  background-color: #f5f5f5;
+  font-family: Tahoma, serif;
+  text-align: center;
+  border: #eaeaea;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .lead-form {
+    padding: 2rem 11rem;
+  }
+}
+.lead-form .form-container {
+  padding: 2rem 2rem;
+}
+.lead-form .form-container .lead-form--TestDriven .testdriveh2 {
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  color: #333333;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.lead-form .form-container .lead-form--TestDriven .testdriveh2 .blue-ab {
+  color: rgb(70, 154, 244);
+}
+.lead-form .form-container .lead-form--TestDriven div {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #999999;
+  margin-bottom: 1.2rem;
+}
+.lead-form .form-container .lead-form--TestDriven .lead-links {
+  display: flex;
+  flex-direction: column;
+}
+.lead-form .form-container .lead-form--TestDriven .lead-links .phonenumber {
+  color: rgb(70, 154, 244);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.lead-form .form-container .lead-form--TestDriven .lead-links .callback, .lead-form .form-container .lead-form--TestDriven .lead-links .e-mail {
+  color: #555555;
+  font-size: small;
+  line-height: 10px;
+}
+.lead-form .lead-form--form-block {
+  padding: 0.4rem 0.2rem;
+  background-color: white;
+}
+.lead-form .lead-form--form-block #wf-form-question-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.lead-form .lead-form--form-block #wf-form-question-form input, .lead-form .lead-form--form-block #wf-form-question-form textarea {
+  width: 100%;
+}
+
+.success-message, .w-form-fail {
+  display: none;
+}
+
+footer {
+  height: fit-content;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+footer img {
+  max-width: 120px;
+  margin: auto;
+}
+footer p {
+  margin-top: 35px;
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+.main-links {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.main-links a {
+  text-decoration: none;
+  color: #555555;
 }
 
 main {
@@ -345,6 +670,23 @@ main {
   flex-direction: column;
   position: relative;
   height: fit-content;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.anker-link:before {
+  content: "";
+  display: block;
+  height: 270px;
+  margin: -270px 0 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=layout.css.map */

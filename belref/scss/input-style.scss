@@ -1,7 +1,10 @@
-input {
-  border: 1px solid gray;
-  background: red;
-
-  &[type=text] { color: white; }
-  &.some_class { display: none; }
+@import "shered";
+input, textarea {
+  border: 1px solid #dcdcdc;
+  background: white;
+  padding: 1rem;
+  resize: vertical;
+  &[type="submit"] {
+    @extend .button-details;
+  }
 }

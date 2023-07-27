@@ -9,6 +9,11 @@
   cursor: pointer;
   padding: 0;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #burger-menu {
+    display: none;
+  }
+}
 #burger-menu span {
   width: 2rem;
   height: 0.25rem;
@@ -22,19 +27,78 @@
 nav {
   display: none;
 }
-
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.show {
-  display: flex !important;
-  flex-direction: column;
+nav a {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-shadow: #777777 5px 0.2px 15px;
+  text-decoration: none;
+  color: #bdbbbb;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  nav a {
+    color: #222222;
+    padding: 0.8rem 0.9rem;
+    font-size: 0.8rem;
+    text-shadow: none;
+    margin-top: 25px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    z-index: 999;
+  }
+}
+
+#menu {
   position: absolute;
-  top: 100px;
-  background-color: #b3d4fc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 3;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=burger_menu.css.map */

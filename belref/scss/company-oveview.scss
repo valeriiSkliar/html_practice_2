@@ -1,3 +1,5 @@
+@import "variables";
+
 .company-overview {
   background-color: #fff;
   display: flex;
@@ -7,7 +9,9 @@
   text-align: center;
   font-family: Tahoma, serif;
   padding: 5rem 2rem;
-
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    flex-direction: row;
+  }
   .company-overview__item--left {
     margin-top: 1rem;
     display: flex;
@@ -42,7 +46,17 @@
    font-size: 1.5rem;
    font-weight: 700;
   }
-
-.company-overview-image__item--refrigerator {
-  display: none;
+.company-overview-image{
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    position: relative;
+  }
+  .company-overview-image__item--refrigerator {
+    display: none;
+    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+      max-width: 150px;
+      position: absolute;
+      display: block;
+    }
+  }
 }
+

@@ -8,6 +8,11 @@
   font-family: Tahoma, serif;
   padding: 5rem 2rem;
 }
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview {
+    flex-direction: row;
+  }
+}
 .company-overview .company-overview__item--left {
   margin-top: 1rem;
   display: flex;
@@ -43,8 +48,20 @@
   font-weight: 700;
 }
 
-.company-overview-image__item--refrigerator {
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview-image {
+    position: relative;
+  }
+}
+.company-overview-image .company-overview-image__item--refrigerator {
   display: none;
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .company-overview-image .company-overview-image__item--refrigerator {
+    max-width: 150px;
+    position: absolute;
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=company-oveview.css.map */

@@ -31,15 +31,19 @@
     <span></span>
     <span></span>
   </button>
+
   <div class="logo header-item">
     <img src="./img/logo.png" alt="">
   </div>
-  <nav class="headMenu myNav header-item">
-    <a class="headMenu-item">item 1</a>
-    <a class="headMenu-item">item 2</a>
-    <a class="headMenu-item">item 3</a>
-    <a class="headMenu-item">item 4</a>
-  </nav>
+
+  <div id="overlay" class="hidden header-item">
+    <nav id="menu" class="headMenu myNav ">
+      <a  class="headMenu-item">Рефрижераторы</a>
+      <a class="headMenu-item">Запчасти</a>
+      <a class="headMenu-item">Гарантии</a>
+      <a href="#contacts" class="headMenu-item">Контакты</a>
+    </nav>
+  </div>
   <div class="contact-phone header-item">
     <a href="tel:+3809731574524">
       <img src="./img/phone.png" alt="">
@@ -172,7 +176,8 @@
             <span class="blue-ab">Монтаж производим</span>
             за 1-2 рабочих дня. А если сроки поджимают, выйдем на работу и в выходные
           </h3>
-          <div class="service-card-core__text-block">Сегодня монтаж и ремонт оборудования делается на СТО в Минске. Но уже в 2019 году Вы
+          <div class="service-card-core__text-block">Сегодня монтаж и ремонт оборудования делается на СТО в Минске. Но
+            уже в 2024 году Вы
             пройдете плановое ТО в своем областном центре
           </div>
         </div>
@@ -185,29 +190,109 @@
     </div>
   </section>
   <section class="still-in-use">
-    <div class="_7section">
-      <div class="cz _7cz"><h2 class="center-h2"><span class="block-ab">97% оборудования, установленного за 40 лет, до сих пор в эксплуатации.</span>
-        Именно <span class="blue-ab">поэтому Zanotti так популярны</span> в России и Беларуси</h2>
-        <div data-delay="3000" data-animation="slide" data-autoplay="1" data-hide-arrows="1" data-duration="500"
-             data-infinite="1" class="slider w-slider" role="section" aria-label="carousel">
-          <div class="mask w-slider-mask" id="w-slider-mask-0">
-            <div class="slide w-slide" aria-label="1 of 15" role="group"
-                 style="transform: translateX(-2784px); opacity: 1;" aria-hidden="true">
-              <a
-                href="#"
-                class="lightbox-link w-inline-block w-lightbox"
-                tabindex="-1"
-                aria-hidden="true">
-                <div class="sliderdiv _01" aria-hidden="true"></div>
-              </a>
-            </div>
+    <div class="still-in-use--item">
+      <h3 class="center-h2">
+          <span
+            class="block-ab"
+          >97% оборудования, установленного за 40 лет, до сих пор в эксплуатации.
+          </span>
+        Именно
+        <span
+          class="blue-ab">поэтому Zanotti так популярны
+          </span>
+        в Казахстане.
+      </h3>
+    </div>
+    <div class="still-in-use--item">
+      <div id="gallery">
+        <button id="prev"><</button>
+        <img id="image" src="./img/still-in-use-gallery/1.jpg"/>
+        <button id="next">></button>
+      </div>
+    </div>
+  </section>
+  <section id="contacts" class="lead-form anker-link">
+    <div class="form-container">
+      <div  class="lead-form--TestDriven">
+        <h2 class="h2 testdriveh2">Запишитесь на
+          <span
+            class="blue-ab">тест-драйв рефрижераторов Zanotti
+          </span>
+          в нашем офисе в Астане
+        </h2>
+        <div>Астанинская область, Горный район, Уртинский<br>райсовет, район деревни Исламбеково, 23/4, 212</div>
+        <div class="lead-links">
+          <a
+            href="tel:+850635496626"
+            class="phonenumber bignumber">+85 (063) 549-66-26</a><br>
+          <a
+            data-remodal-target="callback"
+            href="#"
+            class="callback">
+            Заказать обратный звонок
+          </a>
+          <br>
+          <a href="#"
+             class="e-mail">email:
+            belref@google.com
+          </a>
+        </div>
+      </div>
+      <div class="lead-form--form-block w-form">
+        <form id="wf-form-question-form" name="wf-form-question-form" data-name="question form" redirect="/sp.html"
+              data-redirect="/sp.html" class="form">
+          <input type="email" class="text-field w-input" maxlength="256" name="email" data-name="email"
+                 placeholder="hello@gmail.com" id="email" required="">
+          <textarea id="question" name="question" placeholder="Задайте Ваш вопрос...." maxlength="5000"
+                    data-name="question" required="" class="yourquestion w-input">
+          </textarea>
+          <input
+            type="submit"
+            value="Отправить вопрос"
+            class="standart-button submit-button w-button">
+        </form>
+        <div class="success-message w-form-done">
+          <div>Спасибо за Ваше сообщение! Мы свяжемся с Вами в ближайшее время</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Уупс,&nbsp;что-то пошло не так! Пожалуйста, свяжитесь с нами по телефону <a href="tel:+375298774002"
+                                                                                           class="blue-link">+375 (29)
+            877-40-02</a>,&nbsp;или через email <a href="mailto:hello!?subject=belref%40yandex.ru" class="blue-link">belref@yandex.ru</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer></footer>
+<footer>
+  <img src="./img/logo.png" alt="">
+  <div class="main-links">
+          <span>
+            <a
+              href="#">Рефрижераторы
+            </a>
+          </span>
+    <span>
+            <a
+              href="#">
+            Запчасти
+          </a>
+          </span>
+    <span><a
+      href="#">
+            Гарантии
+          </a>
+          </span>
+    <span>
+            <a href="#">
+              Контакты
+            </a>
+          </span>
+  </div>
+  </div>
+  <p> 2024 © ООО "КазахПартс". <br>Все права защищены.
+  </p>
+</footer>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 

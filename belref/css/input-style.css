@@ -1,12 +1,17 @@
-input {
-  border: 1px solid gray;
-  background: red;
-}
-input[type=text] {
+.button-details, input[type=submit], textarea[type=submit] {
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: auto;
+  background-color: #469af4;
   color: white;
+  letter-spacing: 1.3px;
 }
-input.some_class {
-  display: none;
+
+input, textarea {
+  border: 1px solid #dcdcdc;
+  background: white;
+  padding: 1rem;
+  resize: vertical;
 }
 
 /*# sourceMappingURL=input-style.css.map */

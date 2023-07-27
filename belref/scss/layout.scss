@@ -1,3 +1,17 @@
 @import "header";
 @import "burger_menu";
 @import "main";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.anker-link:before {
+  content: "";
+  display: block;
+  height: 270px;
+  margin: -270px 0 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -2,15 +2,27 @@
 .installation {
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
+
+  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    padding: 2rem 11rem;
+  }
   .service-card-core {
     .service-card-core__service {
       .service--heading {
+        padding-bottom: 1.5rem;
         color: #333333;
-        font-weight: 600;
+        line-height: 1.5rem;
+        font-weight: 700;
         text-align: center;
         .blue-ab {
           color: $general-theme-color;
         }
+      }
+      .service-card-core__text-block {
+        font-size: 0.8rem;
+        color: #888888;
+        text-align: center;
+        line-height: 1.5rem;
       }
     }
   }
@@ -22,21 +34,41 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
   .wrench {
     width: 150px;
     height: 150px;
     background-image: url(".././img/service_key.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .gearwheel2 {
-    width: 150px;
-    height: 150px;
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
+    left: 0.1rem;
+    bottom: 0.8rem;
     background-image: url(".././img/tool_1.png");
+    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+      left: 7rem;
+    }
   }
   .gearwheel1 {
-    width: 150px;
-    height: 150px;
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
+    right: 0.1rem;
+    top: 0.8rem;
     background-image: url(".././img/service_wheel_3.png");
+    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+      right: 7rem;
+    }
   }
 }

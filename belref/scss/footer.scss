@@ -1,0 +1,28 @@
+footer {
+  height: fit-content;
+  padding: 2rem 2rem;
+  text-align: center;
+  img {
+    max-width: 120px;
+    margin: auto;
+
+  }
+  p {
+    margin-top: 35px;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+}
+.main-links {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #555555;
+  }
+}
