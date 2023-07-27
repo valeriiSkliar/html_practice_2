@@ -1,0 +1,85 @@
+@import "shered";
+@import "variables";
+
+.equipment-you-need {
+  font-family: Tahoma, serif;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  .equipment-you-need--item__header {
+    color: #555236;
+  }
+  .equipment-you-need--item__header3{
+    color: #469af4;
+  }
+  .equipment-you-need--item__header{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .equipment-you-need--item__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .equipment-you-need--item__help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    background-color: $general-theme-color;
+    .equipment-you-need--item__help__header{
+      color: white;
+      padding: 2rem 0;
+      font-size: 1.3rem;
+    }
+    .equipment-you-need--item__help__description {
+      color: #222222;
+      font-size: 0.9rem;
+      padding: 0 1rem;
+      margin-bottom: 30px;
+      max-width: 80%;
+      span{
+        padding-bottom: 15px;
+      }
+    }
+    a {
+      div {
+        color: white;
+        width: fit-content;
+        @extend .button-details;
+        background-color: #bdbbbb;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+.equipment-list--item{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+  .equipment-list-item__img {
+    margin: auto;
+    max-width: 80%;
+  }
+  .equipment-list-item__header {
+    font-weight: 600;
+  }
+  .equipment-list-item__description{
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .equipment-list-item__link {
+    margin-top: 15px;
+    div{
+      @extend .button-details;
+    }
+
+  }
+}

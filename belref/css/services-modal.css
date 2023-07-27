@@ -1,0 +1,27 @@
+.services-modal {
+  background-color: #222222;
+  color: #eaeaea;
+  width: 100%;
+  min-height: 6rem;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.services-modal .services-modal__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.services-modal .services-modal__item p {
+  padding-top: 15px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=services-modal.css.map */

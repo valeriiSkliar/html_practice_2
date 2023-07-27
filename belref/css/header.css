@@ -1,0 +1,56 @@
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  max-height: 4rem;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border-bottom: #999999 1px solid;
+}
+header .headMenu, header logo, header contact-phone {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .headMenu {
+  order: 2;
+  flex-grow: 3;
+  display: none;
+}
+header .logo {
+  order: 1;
+  flex-grow: 1;
+  min-width: 80px;
+}
+header .logo img {
+  max-width: 150px;
+}
+header .contact-phone {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+header .contact-phone a p {
+  display: none;
+}
+header .contact-phone a img {
+  max-width: 35px;
+}
+header .header-item:nth-child(1) {
+  order: 4;
+}
+header .header-item:nth-child(2) {
+  order: 1;
+}
+header .header-item:nth-child(4) {
+  order: 2;
+}
+
+/*# sourceMappingURL=header.css.map */

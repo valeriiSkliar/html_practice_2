@@ -1,0 +1,129 @@
+.search_filter{
+  padding-top: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+input[type="search"] {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: #efefef 1px 1px 5px 5px;
+}
+
+input[type="search"]::placeholder {
+  color: #888;
+  opacity: 1; /* Firefox */
+}
+
+input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #888;
+}
+
+input[type="search"]::-ms-input-placeholder { /* Microsoft Edge */
+  color: #888;
+}
+
+input[type="search"]:focus {
+  border: 1px solid #66afe9;
+  outline: none;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border: 0;
+  padding: 5px 20px;
+  width: 100%;
+  text-align: justify;
+}
+.accordion-button img{
+  padding-left: 20%;
+}
+.accordion-content {
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-button.active + .accordion-content {
+  display: block;
+}
+.clear_filter {
+  border: 0;
+  border-radius: 5px;
+  background: #ECECEC;
+  width: 100%;
+  text-align: center;
+  padding: 10px 10px;
+  transition: 0.3s;
+}
+.clear_filter:hover {
+  background: var(--button-secondary-color);
+  color: #FFFFFF;
+
+}
+.subscribe {
+  font-family: Tahoma;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+div input[type='email'] {
+  margin: 15px 0;
+}
+
+input[type="email"] {
+  background-color: rgba(246, 246, 246, 0.84);
+
+  width: 200px;
+  height: 30px;
+  padding: 10px 5px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="email"]::placeholder {
+  color: #888;
+  opacity: 1; /* Firefox */
+}
+
+input[type="email"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #888;
+}
+
+input[type="email"]::-ms-input-placeholder { /* Microsoft Edge */
+  color: #888;
+}
+
+input[type="email"]:focus {
+  border: 1px solid #66afe9;
+  outline: none;
+}
+
+.create_alert{
+  font-family: Tahoma , serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  border: 0;
+  border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background: #5340FF;  width: 60%;
+  text-align: center;
+  padding: 10px 10px;
+}

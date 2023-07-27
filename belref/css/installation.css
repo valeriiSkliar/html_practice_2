@@ -1,0 +1,39 @@
+.installation {
+  padding: 2rem 2rem;
+  font-family: Tahoma, serif;
+}
+.installation .service-card-core .service-card-core__service .service--heading {
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
+}
+.installation .service-card-core .service-card-core__service .service--heading .blue-ab {
+  color: #469af4;
+}
+
+.service-card-core__parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.service-card-core__parts .wrench {
+  width: 150px;
+  height: 150px;
+  background-image: url(".././img/service_key.png");
+}
+.service-card-core__parts .gearwheel2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-image: url(".././img/tool_1.png");
+}
+.service-card-core__parts .gearwheel1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-image: url(".././img/service_wheel_3.png");
+}
+
+/*# sourceMappingURL=installation.css.map */

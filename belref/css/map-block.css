@@ -1,0 +1,14 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.map .map__item {
+  height: 15rem;
+}
+.map .map__item iframe {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=map-block.css.map */

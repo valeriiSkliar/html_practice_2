@@ -1,0 +1,12 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  .map__item{
+    height:15rem;
+    iframe{
+      margin-bottom: 20px;
+    }
+  }
+}

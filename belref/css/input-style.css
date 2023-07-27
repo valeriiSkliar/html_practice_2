@@ -1,0 +1,12 @@
+input {
+  border: 1px solid gray;
+  background: red;
+}
+input[type=text] {
+  color: white;
+}
+input.some_class {
+  display: none;
+}
+
+/*# sourceMappingURL=input-style.css.map */

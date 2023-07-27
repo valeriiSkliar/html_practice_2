@@ -1,0 +1,48 @@
+.company-overview {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Tahoma, serif;
+  padding: 5rem 2rem;
+
+  .company-overview__item--left {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .send-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    button{
+      flex-grow: 1;
+      padding: 10px 10px;
+      max-height: 40px;
+      min-width: fit-content;
+      max-width: 80%;
+      background-color: #469AF4;
+      color: white;
+    }
+    p{
+      flex-grow: 1;
+      font-size: 1rem;
+    }
+  }
+}
+ .text-block {
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
+   font-size: 1.5rem;
+   font-weight: 700;
+  }
+
+.company-overview-image__item--refrigerator {
+  display: none;
+}

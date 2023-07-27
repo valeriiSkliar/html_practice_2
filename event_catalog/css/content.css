@@ -1,0 +1,156 @@
+.content{
+  display: flex;
+  /*width: 100%;*/
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-grow: 0;
+}
+.search_filter{
+  display: flex;
+  /*width: 25%;*/
+  flex-grow: 0.3;
+  max-width: 210px;
+  padding-bottom: 0px;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px){
+  .content {
+    /*width: 100%;*/
+    justify-content: center;
+  }
+  .search_filter {
+    display: none;
+  }
+  .items-list {
+    flex-grow: 2;
+    /*width: 100%;*/
+  }
+}
+
+
+.items-list {
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+  flex-grow: 6;
+  flex-shrink: 0;
+}
+
+.list-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  /*padding: 0 1rem 0.3rem 0;*/
+  gap: 0.5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.list-header h2 {
+  flex-grow: 3;
+  color: #1A1B1F;
+  font-family: Tahoma, serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem;
+}
+.layout-toggle{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.125rem;
+  gap: 0.25rem;
+}
+.layout-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+.layout-btn img {
+  width: 0.8rem;
+}
+.layout-active{
+  background-color: #9DD100;
+}
+.list {
+  /*width: 100%;*/
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (min-width: 900px){
+
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .list-item {
+    max-width: 280px;
+    flex-grow: 0.3;
+  }
+  .list-header {
+    max-width: 625px;
+  }
+  .items-list {
+    max-width: 590px;
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1450px){
+
+  .list-item {
+    max-width: 310px;
+    flex-grow: 0.3;
+  }
+  .list-header {
+    max-width: 1030px;
+  }
+  .items-list {
+    max-width: 981px;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 899px){
+  .list-header h2 {
+    flex-grow: 3;
+    color: #1a1b1f;
+    font-family: Tahoma,serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  .items-list {
+    max-width: 75vw;
+  }
+  .list-item {
+    max-width: 25rem;
+  }
+  .list {
+    gap: 20px;
+  }
+  .search_filter{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .list-header h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,42 @@
+@import "variables";
+.installation {
+  padding: 2rem 2rem;
+  font-family: Tahoma, serif;
+  .service-card-core {
+    .service-card-core__service {
+      .service--heading {
+        color: #333333;
+        font-weight: 600;
+        text-align: center;
+        .blue-ab {
+          color: $general-theme-color;
+        }
+      }
+    }
+  }
+}
+
+.service-card-core__parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .wrench {
+    width: 150px;
+    height: 150px;
+    background-image: url(".././img/service_key.png");
+  }
+  .gearwheel2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url(".././img/tool_1.png");
+  }
+  .gearwheel1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url(".././img/service_wheel_3.png");
+  }
+}
