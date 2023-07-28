@@ -48,17 +48,3 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Regular.ttf") format("woff2"), url("../fonts/Ubuntu-Regular.ttf") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-html, body {
-  width: 100%;
-  height: fit-content;
-  font-family: Ubuntu, serif;
-}
-
-/*# sourceMappingURL=normalize.css.map */

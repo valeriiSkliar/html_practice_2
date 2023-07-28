@@ -1,0 +1,55 @@
+#overlay {
+  display: none;
+}
+
+#burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+#burger-menu span {
+  width: 2rem;
+  height: 0.25rem;
+  background: #2fc774;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+header {
+  width: 100%;
+  background-color: #3e5d58;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+header .header-container {
+  position: relative;
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container .header-container-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2fc774;
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,32 @@
+@import "burger-menu";
+header{
+  width: 100%;
+  background-color: #3e5d58;
+  //max-height: 120px;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+.header-container {
+  position: relative;
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  //z-index: 11;
+  .header-container-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2fc774;
+  }
+}
+}

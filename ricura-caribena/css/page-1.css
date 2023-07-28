@@ -1,0 +1,61 @@
+.text-block-header, .pages-page-1 .page-1__content p {
+  margin-top: 0px;
+  padding-top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 60px;
+}
+
+.pages-page-1 {
+  background-image: url("../img/foto-banner.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 6rem;
+  height: calc(100vh - 6rem);
+  background-color: #2fc774;
+}
+.pages-page-1 .page-1__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.93) 35%, rgba(255, 255, 255, 0.35));
+  padding: 2rem 2rem;
+}
+.pages-page-1 .page-1__content p {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+@media screen and (orientation: landscape) and (max-width: 479px) {
+  .pages-page-1 .page-1__content p {
+    font-size: 2.8rem;
+  }
+}
+.pages-page-1 .page-1__content a img {
+  margin-top: 50px;
+  animation: move 3s infinite;
+  user-select: none;
+}
+@media screen and (orientation: landscape) {
+  .pages-page-1 .page-1__content a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10rem;
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px); /* adjust as needed */
+  }
+}
+
+/*# sourceMappingURL=page-1.css.map */

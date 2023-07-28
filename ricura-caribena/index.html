@@ -16,16 +16,113 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+<header>
+  <div class="header-container">
+    <div class="logo header-container-item">
+      <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d976bbe269be42988e092bb_Isotipo-Color.png" width="41">
+      <p>Green-Life</p>
+    </div>
+    <div id="overlay" class="hidden header-item">
+      <div>
+        <div>
+          <a>
+            <div>
+              <!--            <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5db329afb44d6170215af5f5_Imagotipo-web.svg" width="361">-->
+              <!--            <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d976bbe269be42988e092bb_Isotipo-Color.png" width="41">-->
+              <!--            <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d976bbe269be42988e092bb_Isotipo-Color.png" width="70">-->
+            </div>
+          </a>
+          <div>
+            <div>
+              Menu
+            </div>
+          </div>
+          <nav>
+            <div>
+              Menu
+            </div>
+            <div>
+              <a>
+                Productos
+              </a>
+              <a>
+                Sobre nosotros
+              </a>
+              <a>
+                Contáctanos
+              </a>
+            </div>
+            <a>
+              <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5db2d30d014ef82df18ec7e4_Lupa-icon.svg">
+              <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5db2ceaca140660df9c5e07d_Lupa-icon.png">
+            </a>
+            <div>
+              <h3>
+                Síguenos
+              </h3>
+              <div>
+                <div>
+                  <a>
+                    <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d995ddee288d84e24a29e13_Insta-icon.png" width="60">
+                  </a>
+                </div>
+                <div>
+                  <a>
+                    <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d995e03574a7d1d95225ba7_Facebook-icon.png" width="31">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+    </div>
+    <button class="header-item" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+  <section class="pages pages-page-1">
+    <div class="page-1__content page-1__content--mobile">
+      <p>Tan rico<br>como nuestra<br>tierra.</p>
+      <a>
+        <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d9a3f37574a7d1c57294ff5_Arrow-solo.png" width="30">
+      </a>
+    </div>
+  </section>
+  <section class="pages pages-page-2">
+    <div class="page-2__content">
+      <div class="page-2__content__product-img">
+        <img class="product-photo-container__image" src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d91556ad12b5b3898a426ef_Culantro.png" width="767" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 55vw" srcset="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d91556ad12b5b3898a426ef_Culantro-p-500.png 500w, https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d91556ad12b5b3898a426ef_Culantro-p-800.png 800w, https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d91556ad12b5b3898a426ef_Culantro-p-1080.png 1080w, https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d91556ad12b5b3898a426ef_Culantro.png 1280w">
+      </div>
+      <div class="page-2__content__text-block">
+        <h1>Know your Delights</h1>
+        <div class="page-2__content__text-block__link">
+          <a href="/products">
+            <p>see more</p>
+          </a>
+          <div class="arrow_right">
+              <img src="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d9a40786e7b48a1141036df_Arrow-solo.png" width="34" sizes="(max-width: 767px) 100vw, 34px" srcset="https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d9a40786e7b48a1141036df_Arrow-solo-p-500.png 500w, https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d9a40786e7b48a1141036df_Arrow-solo-p-800.png 800w, https://uploads-ssl.webflow.com/5d913d79d12b5b4349a32a41/5d9a40786e7b48a1141036df_Arrow-solo.png 1032w">
+          </div>
+          </a>
+        </div>
+      </div>
+      <img class="page-2__content__stamp" src="img/Stamp-Local-Color.png">
+    </div>
+  </section>
+</main>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
