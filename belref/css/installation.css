@@ -2,9 +2,27 @@
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media (min-width: 500px) and (max-width: 700px) {
   .installation {
-    padding: 2rem 11rem;
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .installation {
+    width: 55%;
+    margin: auto;
+  }
+}
+@media ((min-width: 700px) and (max-width: 1000px)) and (orientation: landscape) {
+  .installation {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (min-width: 1001px) {
+  .installation {
+    width: 70%;
+    margin: auto;
   }
 }
 .installation .service-card-core .service-card-core__service .service--heading {
@@ -13,6 +31,13 @@
   line-height: 1.5rem;
   font-weight: 700;
   text-align: center;
+}
+@media (min-width: 1001px) {
+  .installation .service-card-core .service-card-core__service .service--heading {
+    width: 70%;
+    margin: auto;
+    font-size: 1.6rem;
+  }
 }
 .installation .service-card-core .service-card-core__service .service--heading .blue-ab {
   color: rgb(70, 154, 244);
@@ -23,6 +48,13 @@
   text-align: center;
   line-height: 1.5rem;
 }
+@media (min-width: 1001px) {
+  .installation .service-card-core .service-card-core__service .service-card-core__text-block {
+    width: 60%;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+}
 
 .service-card-core__parts {
   display: flex;
@@ -31,6 +63,11 @@
   align-items: center;
   position: relative;
 }
+@media (min-width: 1001px) {
+  .service-card-core__parts {
+    margin-top: 50px;
+  }
+}
 .service-card-core__parts .wrench {
   width: 150px;
   height: 150px;
@@ -38,6 +75,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 1001px) {
+  .service-card-core__parts .wrench {
+    width: 200px;
+    height: 200px;
+  }
 }
 .service-card-core__parts .gearwheel2 {
   width: 85px;
@@ -55,6 +98,21 @@
     left: 7rem;
   }
 }
+@media screen and (min-width: 450px), (max-width: 500px) {
+  .service-card-core__parts .gearwheel2 {
+    left: 4.5rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .service-card-core__parts .gearwheel2 {
+    left: 8rem;
+  }
+}
+@media (min-width: 1001px) {
+  .service-card-core__parts .gearwheel2 {
+    left: 290px;
+  }
+}
 .service-card-core__parts .gearwheel1 {
   width: 85px;
   height: 85px;
@@ -69,6 +127,21 @@
 @media screen and (max-height: 450px) and (orientation: landscape) {
   .service-card-core__parts .gearwheel1 {
     right: 7rem;
+  }
+}
+@media screen and (min-width: 450px), (max-width: 500px) {
+  .service-card-core__parts .gearwheel1 {
+    right: 4.5rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .service-card-core__parts .gearwheel1 {
+    right: 8rem;
+  }
+}
+@media (min-width: 1001px) {
+  .service-card-core__parts .gearwheel1 {
+    right: 290px;
   }
 }
 

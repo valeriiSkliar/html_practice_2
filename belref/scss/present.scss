@@ -19,6 +19,21 @@
     font-size: 1.2rem;
     line-height: 2.5rem;
   }
+  @media (min-width: $small-screen) and (max-width: $middle-screen) {
+    height: 24rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  @media (min-width: $middle-screen) and (max-width: $large-screen) {
+    height: 29rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  @media (min-width: $larger-screen)  {
+    height: 30rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
   img {
     position: absolute;
     top: -2rem;
@@ -29,14 +44,28 @@
     @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
       top: -3rem;
     }
-
+    @media (min-width: $small-screen) and (max-width: $middle-screen) {
+      width: 35%;
+    }
+    @media (min-width: $middle-screen) and (max-width: $large-screen) {
+      top: -3.5rem;
+      width: 40%;
+    }
+    @media (min-width: $larger-screen)  {
+      top: -3.5rem;
+      width: 25%;
+      max-width: 380px;
+    }
   }
   p {
     text-align: center;
+    width: 80%;
+    align-self: center;
     b {
+      border-radius: 0.3rem;
       background-color: white;
       color: #222222;
-      padding: 0 5px;
+      padding: 0 7px;
     }
   }
 }

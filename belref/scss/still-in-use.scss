@@ -2,9 +2,23 @@
 .still-in-use {
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
-    padding: 2rem 11rem;
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) and (orientation: landscape){
+    width: 70%;
+    margin: auto;
   }
+  @media (min-width: $small-screen) and (max-width: $middle-screen) {
+    padding: 2rem 4rem;
+  }
+  @media (min-width: $middle-screen) and (max-width: $large-screen) {
+    width: 70%;
+    margin: auto;
+  }
+  @media (min-width: $larger-screen)  {
+    padding: 5rem 2rem;
+    width: 70%;
+    margin: auto;
+  }
+
   .still-in-use--item {
     .center-h2 {
       padding-bottom: 1.5rem;
@@ -14,6 +28,10 @@
       text-align: center;
       .blue-ab {
         color: $general-theme-color;
+      }
+      @media (min-width: $larger-screen)  {
+        font-size: 1.9rem;
+        line-height: 2rem;
       }
     }
   }
@@ -33,9 +51,10 @@
       margin: 10px;
       border: solid $general-theme-color;
       border-radius: 50%;
-      padding: 0.8rem 0.8rem;
+      padding: 0.8rem 1em;
       background-color: $general-theme-color;
       transition: 0.2ms;
+
     }
     .button:hover {
       padding: 1.2rem 1.2rem;
@@ -45,9 +64,15 @@
     }
     #prev{
       left: -1rem;
+      @media (min-width: $larger-screen)  {
+        left: 5rem;
+      }
     }
     #next{
       right: -1rem;
+      @media (min-width: $larger-screen)  {
+        right: 5rem;
+      }
     }
   }
 
@@ -55,8 +80,13 @@
     width: 90%;
     height: 250px;
     object-fit: cover;
+    border-radius: 0.5rem;
     @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
       height: 320px;
+    }
+    @media (min-width: $larger-screen)  {
+      width: 70%;
+      height: 550px;
     }
   }
 

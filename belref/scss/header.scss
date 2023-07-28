@@ -12,7 +12,10 @@ header{
   flex-direction: row;
   gap: 2rem;
   border-bottom: #999999 1px solid;
-  .headMenu, logo, contact-phone {
+  @media (min-width: $middle-screen){
+    padding: 3rem 2rem;
+  }
+  .headMenu, .logo, .contact-phone {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,8 +25,7 @@ header{
   .headMenu{
     order: 2;
     flex-grow: 3;
-    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
-     //display: none;
+    @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,12 +39,18 @@ header{
     min-width: 80px;
     img {
       max-width: 150px;
+      @media (min-width: $middle-screen){
+        max-width: 200px;
+        z-index: 1000;
+        position: fixed;
+        left: 2rem;
+      }
     }
   }
   .contact-phone{
     flex-grow: 1;
     cursor: pointer;
-    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
       display: none;
       flex-direction: column;
       justify-content: center;
@@ -56,14 +64,14 @@ header{
         display: none;
         color: rgba(0, 0, 0, 0.25);
 
-        @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+        @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
           display: block;
         }
       }
       img {
         max-width: 35px;
 
-        @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+        @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
           display: none;
         }
 
@@ -79,7 +87,7 @@ header{
   }
   .header-item:nth-child(3) {
     order: 2;
-    @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+    @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
       //background-color: #b3d4fc;
     }
   }

@@ -9,7 +9,7 @@
   cursor: pointer;
   padding: 0;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media ((min-width: 700px) and (max-width: 1000px)) or (orientation: landscape) {
   #burger-menu {
     display: none;
   }
@@ -27,7 +27,7 @@
 nav {
   display: none;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media ((min-width: 700px) and (max-width: 1000px)) or (orientation: landscape) {
   nav {
     display: flex;
     flex-direction: row;
@@ -42,13 +42,18 @@ nav a {
   text-decoration: none;
   color: #bdbbbb;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media ((min-width: 700px) and (max-width: 1000px)) or (orientation: landscape) {
   nav a {
     color: #222222;
     padding: 0.8rem 0.9rem;
     font-size: 0.8rem;
     text-shadow: none;
     margin-top: 25px;
+  }
+}
+@media (min-width: 700px) {
+  nav a {
+    margin-top: 0;
   }
 }
 
@@ -73,7 +78,7 @@ nav a {
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 2;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media ((min-width: 700px) and (max-width: 1000px)) or (orientation: landscape) {
   #overlay {
     display: flex;
     flex-direction: column;
@@ -93,7 +98,7 @@ nav a {
   color: white;
   z-index: 3;
 }
-@media screen and (max-height: 450px) and (orientation: landscape) {
+@media ((min-width: 700px) and (max-width: 1000px)) or (orientation: landscape) {
   #menu {
     display: flex;
     flex-direction: row;

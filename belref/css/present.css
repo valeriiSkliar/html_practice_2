@@ -21,6 +21,27 @@
     line-height: 2.5rem;
   }
 }
+@media (min-width: 500px) and (max-width: 700px) {
+  .present {
+    height: 24rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .present {
+    height: 29rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 1001px) {
+  .present {
+    height: 30rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
 .present img {
   position: absolute;
   top: -2rem;
@@ -34,13 +55,34 @@
     top: -3rem;
   }
 }
+@media (min-width: 500px) and (max-width: 700px) {
+  .present img {
+    width: 35%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .present img {
+    top: -3.5rem;
+    width: 40%;
+  }
+}
+@media (min-width: 1001px) {
+  .present img {
+    top: -3.5rem;
+    width: 25%;
+    max-width: 380px;
+  }
+}
 .present p {
   text-align: center;
+  width: 80%;
+  align-self: center;
 }
 .present p b {
+  border-radius: 0.3rem;
   background-color: white;
   color: #222222;
-  padding: 0 5px;
+  padding: 0 7px;
 }
 
 /*# sourceMappingURL=present.css.map */

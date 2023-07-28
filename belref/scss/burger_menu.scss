@@ -10,7 +10,7 @@
   cursor: pointer;
   padding: 0;
 
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
     display: none;
   }
   span {
@@ -25,7 +25,7 @@
 }
 nav {
   display: none;
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
     display: flex;
     flex-direction: row;
   }
@@ -38,12 +38,15 @@ nav a {
   text-shadow: #777777 5px 0.2px 15px;
   text-decoration: none;
   color: #bdbbbb;
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
     color: #222222;
     padding: 0.8rem 0.9rem;
     font-size: 0.8rem;
     text-shadow: none;
     margin-top: 25px;
+  }
+  @media (min-width: $middle-screen){
+    margin-top: 0;
   }
 }
 
@@ -73,7 +76,7 @@ nav a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 2;
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +95,7 @@ nav a {
   color: white;
   z-index: 3;
 
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) or (orientation: landscape){
     display: flex;
     flex-direction: row;
     position: relative;

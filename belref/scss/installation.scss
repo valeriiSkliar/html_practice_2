@@ -3,8 +3,20 @@
   padding: 2rem 2rem;
   font-family: Tahoma, serif;
 
-  @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
-    padding: 2rem 11rem;
+  @media (min-width: $small-screen) and (max-width: $middle-screen) {
+    padding: 2rem 4rem;
+  }
+  @media (min-width: $middle-screen) and (max-width: $large-screen) {
+    width: 55%;
+    margin: auto;
+  }
+  @media ((min-width: $middle-screen) and (max-width: $large-screen)) and (orientation: landscape){
+    width: 70%;
+    margin: auto;
+  }
+  @media (min-width: $larger-screen)  {
+    width: 70%;
+    margin: auto;
   }
   .service-card-core {
     .service-card-core__service {
@@ -14,6 +26,11 @@
         line-height: 1.5rem;
         font-weight: 700;
         text-align: center;
+        @media (min-width: $larger-screen)  {
+          width: 70%;
+          margin: auto;
+          font-size: 1.6rem;
+        }
         .blue-ab {
           color: $general-theme-color;
         }
@@ -23,6 +40,11 @@
         color: #888888;
         text-align: center;
         line-height: 1.5rem;
+        @media (min-width: $larger-screen)  {
+          width: 60%;
+          margin: auto;
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -34,7 +56,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
+  @media (min-width: $larger-screen)  {
+    margin-top: 50px;
+  }
   .wrench {
     width: 150px;
     height: 150px;
@@ -42,6 +66,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-width: $larger-screen)  {
+      width: 200px;
+      height: 200px;
+    }
   }
   .gearwheel2 {
     width: 85px;
@@ -56,6 +84,15 @@
     @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
       left: 7rem;
     }
+    @media screen and (min-width: 450px) , (max-width: $small-screen) {
+      left: 4.5rem;
+    }
+    @media (min-width: $middle-screen) and (max-width: $large-screen) {
+      left: 8rem;
+    }
+    @media (min-width: $larger-screen)  {
+      left: 290px;
+    }
   }
   .gearwheel1 {
     width: 85px;
@@ -69,6 +106,15 @@
     background-image: url(".././img/service_wheel_3.png");
     @media screen and (max-height: $mobile-landscape) and (orientation: landscape){
       right: 7rem;
+    }
+    @media screen and (min-width: 450px) , (max-width: $small-screen) {
+      right: 4.5rem;
+    }
+    @media (min-width: $middle-screen) and (max-width: $large-screen) {
+      right: 8rem;
+    }
+    @media (min-width: $larger-screen)  {
+      right: 290px;
     }
   }
 }
