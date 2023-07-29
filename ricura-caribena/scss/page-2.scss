@@ -1,5 +1,6 @@
-.pages-page-2 {
+@import "shared";
 
+.pages-page-2 {
   width: 100%;
   height: 65vh;
   background-color: #3e5d58;
@@ -30,7 +31,7 @@
       font-weight: 600;
       text-align: center;
     }
-    .page-2__content__text-block__link {
+    .page-2__content__text-block__link, {
       width: 50%;
       margin-top: 1em;
       display: flex;
@@ -43,25 +44,16 @@
       transition: opacity 0.29s, transform 0.29s;
 
       .arrow_right{
-        position: absolute;
-        opacity: 0;
-        left: 0;
-        transition: all 0.5s ease;
-        img {
-          display: block;
-          max-width: 100%;
-          height: auto;
-        }
+        @extend .button-with-arrow_right
       }
 
       &:hover {
         a {
-          transform: translateX(-50%); /* move the text to the left */
+          transform: translateX(-60%);
         }
 
         .arrow_right {
-          opacity: 1;
-          left: 55%; /* bring the arrow back inside the container */
+          @extend .button-with-arrow_right_hover
         }
       }
 
