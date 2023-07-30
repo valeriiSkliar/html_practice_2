@@ -1,0 +1,62 @@
+@import "shared";
+.pages-page-4 {
+  width: 100%;
+  height: 105vh;
+
+  .pages-page-4__wrapper {
+    position: relative;
+    height: 100%;
+
+    .pages-page-4__wrapper__background {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      .background__green {
+        height: 40%;
+        background-color: #3e5d58;
+      }
+      .background__white {
+        height: 60%;
+        background-color: white;
+      }
+    }
+
+    .pages-page-4__wrapper__content {
+      position: absolute;
+      width: 90%;
+      top: 10%;
+      left: 5%;
+      .pages-page-4__wrapper__content__founders {
+
+        .founders__names {
+          display: none;
+        }
+
+        .founders__description {
+          padding-top: 4rem;
+          width: 90%;
+          margin: auto;
+          h1 {
+            font-size: 2.2rem;
+          }
+
+          p {
+            padding-top: 1rem;
+            font-size: 1.2rem;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .pages-page-4__wrapper__content__link {
+        padding-top: 1.5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

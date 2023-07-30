@@ -32,4 +32,14 @@
   text-align: center;
 }
 
+.flex-box--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box--row {
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=shared.css.map */

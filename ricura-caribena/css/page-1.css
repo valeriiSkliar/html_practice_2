@@ -32,6 +32,16 @@
   text-align: center;
 }
 
+.flex-box--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box--row {
+  display: flex;
+  flex-direction: row;
+}
+
 .pages-page-1 {
   background-image: url("../img/foto-banner.png");
   background-size: cover;

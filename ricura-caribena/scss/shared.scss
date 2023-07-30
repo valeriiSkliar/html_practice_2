@@ -30,4 +30,11 @@
   font-weight: 600;
   text-align: center;
 }
-
+.flex-box--column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-box--row {
+  display: flex;
+  flex-direction: row;
+}

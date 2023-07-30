@@ -1,0 +1,97 @@
+.text-block-header {
+  margin-top: 0px;
+  padding-top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 60px;
+}
+
+.button-with-arrow_right {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.button-with-arrow_right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-with-arrow_right_hover {
+  opacity: 1;
+  left: 60%;
+}
+
+.page_text-block {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.flex-box--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box--row {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages-page-4 {
+  width: 100%;
+  height: 105vh;
+}
+.pages-page-4 .pages-page-4__wrapper {
+  position: relative;
+  height: 100%;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__background .background__green {
+  height: 40%;
+  background-color: #3e5d58;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__background .background__white {
+  height: 60%;
+  background-color: white;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content {
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__names {
+  display: none;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description {
+  padding-top: 4rem;
+  width: 90%;
+  margin: auto;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description h1 {
+  font-size: 2.2rem;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link {
+  padding-top: 1.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=page-4.css.map */

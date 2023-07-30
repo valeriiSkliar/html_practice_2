@@ -1,0 +1,44 @@
+@import "shared";
+
+footer {
+  @extend .flex-box--column;
+
+  .footer__social-links {
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    @extend .flex-box--column;
+
+    .footer__social-links__icons {
+
+      gap: 2rem;
+      padding: 1rem 1rem;
+      max-width: 200px;
+
+      @extend .flex-box--row;
+    }
+  }
+  .copyright-block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @extend .flex-box--column;
+
+    p {
+      font-weight: 800;
+    }
+
+    .copyright-block__links {
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+
+
+      @extend .flex-box--column
+    }
+  }
+}

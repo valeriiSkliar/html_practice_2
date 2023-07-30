@@ -1,0 +1,126 @@
+.text-block-header {
+  margin-top: 0px;
+  padding-top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 60px;
+}
+
+.button-with-arrow_right {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.button-with-arrow_right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-with-arrow_right_hover {
+  opacity: 1;
+  left: 60%;
+}
+
+.page_text-block {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.flex-box--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box--row {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages-page-5 {
+  font-family: Ubuntu, serif;
+  width: 100%;
+  height: 85vh;
+  background-color: #eee;
+}
+.pages-page-5 .pages-page-5__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block {
+  padding-top: 2rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block h1 {
+  font-size: 2.2rem;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block a {
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #3e5d58;
+  box-shadow: 3px 3px 18px 1px hsla(0, 0%, 56%, 0.59);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  color: #2fc774;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album {
+  height: 25rem;
+  position: relative;
+}
+.pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
+  max-width: 15rem;
+  max-height: 25rem;
+  position: absolute;
+}
+
+.button-7 {
+  padding-right: 32px;
+  padding-left: 32px;
+  background-color: #3e5d58;
+  box-shadow: 3px 3px 18px 1px hsla(0, 0%, 56%, 0.59);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  color: #2fc774;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898EC;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=page-5.css.map */
