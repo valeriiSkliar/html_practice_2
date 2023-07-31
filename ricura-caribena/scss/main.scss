@@ -9,3 +9,22 @@ main {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2fc774;
+
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2fc774 white;
+}
+
+

@@ -1033,6 +1033,23 @@ main {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2fc774;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2fc774 white;
+}
+
 .text-block-header, .pages-page-1 .page-1__content p, .pages-page-6 h1, .pages-page-6 .pages-page-6__form-wrap form h2 {
   margin-top: 0px;
   padding-top: 0px;
