@@ -128,9 +128,51 @@
   border-radius: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .pages-page-5 {
+    height: fit-content;
+  }
+  .pages-page-5 .pages-page-5__wrapper {
+    flex-direction: column;
+  }
   .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
-    left: 50%;
+    right: 20%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pages-page-5 {
+    height: fit-content;
+  }
+  .pages-page-5 .pages-page-5__wrapper {
+    flex-direction: row;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block h1 {
+    font-size: 1.5rem;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block p {
+    font-size: 1.1rem;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
+    max-width: 300px;
+    right: 20%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 992px) {
+  .pages-page-5 .pages-page-5__wrapper {
+    flex-direction: row;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block h1 {
+    font-size: 1.5rem;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block p {
+    font-size: 1.1rem;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
+    max-width: 300px;
+    right: 20%;
+    top: 15%;
     transform: translateX(-50%);
   }
 }

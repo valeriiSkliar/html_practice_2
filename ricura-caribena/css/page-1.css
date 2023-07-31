@@ -47,8 +47,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  margin-top: 6rem;
-  height: calc(100vh - 6rem);
+  height: 100vh;
   background-color: #2fc774;
 }
 .pages-page-1 .page-1__content {
@@ -56,7 +55,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.93) 35%, rgba(255, 255, 255, 0.35));
-  padding: 2rem 2rem;
+  padding: 6rem 2rem;
 }
 .pages-page-1 .page-1__content p {
   font-size: 3rem;

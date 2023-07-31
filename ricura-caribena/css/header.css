@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #overlay {
   display: none;
 }
@@ -25,11 +26,18 @@
 
 header {
   width: 100%;
-  background-color: #3e5d58;
+  background-color: transparent;
   height: 6rem;
   position: fixed;
   top: 0;
   z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+header:hover {
+  background-color: #3e5d58;
+}
+header.hide {
+  top: -100%; /* замените на высоту вашего заголовка */
 }
 header .header-container {
   position: relative;

@@ -53,3 +53,16 @@ observeWallpapersGallery(wallpapersGallery[0]).pipe(
   }
 });
 
+let lastScrollTop = 0;
+const header = document.querySelector('header'); // замените на селектор вашего заголовка
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    header.classList.add('hide'); // Добавляем класс, когда прокрутка вниз
+  } else {
+    header.classList.remove('hide'); // Удаляем класс, когда прокрутка вверх
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Берем значение для сравнения в следующей итерации
+}, false);
+

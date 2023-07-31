@@ -1,13 +1,21 @@
 @import "burger-menu";
 header{
   width: 100%;
-  background-color: #3e5d58;
-  //max-height: 120px;
+  background-color: transparent;
   height: 6rem;
   position: fixed;
   top: 0;
   z-index: 999;
+  transition: all 0.3s ease-in-out;
 
+  &:hover {
+    background-color: #3e5d58;
+
+  }
+
+  &.hide {
+    top: -100%; /* замените на высоту вашего заголовка */
+  }
 .header-container {
   position: relative;
   margin: 2rem 2rem;
@@ -29,4 +37,17 @@ header{
     color: #2fc774;
   }
 }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)  {
+
+}
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+
 }
