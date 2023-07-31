@@ -52,6 +52,10 @@ footer .footer__social-links .footer__social-links__icons {
   padding: 1rem 1rem;
   max-width: 200px;
 }
+footer .footer__social-links .footer__social-links__icons img {
+  max-width: 45px;
+  max-height: 45px;
+}
 footer .copyright-block {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -60,7 +64,9 @@ footer .copyright-block {
   gap: 1rem;
 }
 footer .copyright-block p {
+  padding-top: 1rem;
   font-weight: 800;
+  font-size: 0.8rem;
 }
 footer .copyright-block .copyright-block__links {
   justify-content: center;

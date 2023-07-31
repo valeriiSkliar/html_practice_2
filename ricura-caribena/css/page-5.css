@@ -90,6 +90,7 @@
 .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album {
   height: 25rem;
   position: relative;
+  padding-bottom: 2rem;
 }
 .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
   max-width: 15rem;

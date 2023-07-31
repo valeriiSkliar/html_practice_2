@@ -17,6 +17,10 @@ footer {
       max-width: 200px;
 
       @extend .flex-box--row;
+      img {
+        max-width: 45px;
+        max-height: 45px;
+      }
     }
   }
   .copyright-block {
@@ -29,7 +33,9 @@ footer {
     @extend .flex-box--column;
 
     p {
+      padding-top: 1rem;
       font-weight: 800;
+      font-size: 0.8rem;
     }
 
     .copyright-block__links {
@@ -38,7 +44,8 @@ footer {
       gap: 0.8rem;
 
 
-      @extend .flex-box--column
+      @extend .flex-box--column;
+
     }
   }
 }

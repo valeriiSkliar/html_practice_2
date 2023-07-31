@@ -51,11 +51,40 @@
       }
 
       .pages-page-4__wrapper__content__link {
-        padding-top: 1.5rem;
+        width: 50%;
+        padding-top: 4rem;
         margin: auto;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 1.5rem;
+        position: relative;
+        -webkit-transition: opacity 0.29s, -webkit-transform 0.29s;
+        transition: opacity 0.29s, transform 0.29s;
+
+        .arrow_right {
+          @extend .button-with-arrow_right
+        }
+
+
+        &:hover {
+          a {
+            transform: translateX(-50%);
+          }
+          .arrow_right {
+            @extend .button-with-arrow_right_hover
+          }
+        }
+        a {
+          color: #2fc774;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-decoration: none;
+          position: relative;
+          text-align: center;
+          transition: all 0.5s ease;
+        }
       }
     }
   }
