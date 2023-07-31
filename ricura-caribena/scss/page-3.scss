@@ -36,8 +36,13 @@
           text-align: center;
 
           .products-list__container__content__item {
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            opacity: 0;
+            transform: translateY(75px);
 
             img {
+              margin: auto;
               max-width: 200px;
             }
 
@@ -87,3 +92,252 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .pages-page-3 {
+
+
+    .page-3__content {
+
+
+      .page-3__products-list {
+
+
+        .products-list__container {
+
+          .products-list__container__header {
+            h2 {
+
+
+            }
+
+            p {
+
+            }
+          }
+
+          .products-list__container__content {
+            flex-direction: column;
+
+
+
+            .products-list__container__content__item {
+              flex-grow: 1;
+
+              img {
+                max-width: 10rem;
+              }
+
+              h2 {
+                font-size: 0.9rem;
+
+              }
+            }
+          }
+        }
+
+        .products-list__button__link {
+
+
+          .arrow_right {
+          }
+
+          &:hover {
+            a {
+            }
+            .arrow_right {
+            }
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .pages-page-3 {
+
+
+    .page-3__content {
+
+
+      .page-3__products-list {
+
+
+        .products-list__container {
+
+          .products-list__container__header {
+            h2 {
+
+
+            }
+
+            p {
+
+            }
+          }
+
+          .products-list__container__content {
+            flex-direction: column;
+
+            .products-list__container__content__item {
+              flex-grow: 1;
+
+              img {
+                max-width: 10rem;
+              }
+
+              h2 {
+                font-size: 0.9rem;
+
+              }
+            }
+          }
+        }
+
+        .products-list__button__link {
+
+
+          .arrow_right {
+          }
+
+          &:hover {
+            a {
+            }
+            .arrow_right {
+            }
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)   {
+  .pages-page-3 {
+
+
+    .page-3__content {
+
+
+      .page-3__products-list {
+
+
+        .products-list__container {
+
+          .products-list__container__header {
+            h2 {
+
+
+            }
+
+            p {
+
+            }
+          }
+
+          .products-list__container__content {
+            flex-direction: row;
+
+
+            .products-list__container__content__item {
+              flex-grow: 1;
+
+              img {
+                max-width: 10rem;
+              }
+
+              h2 {
+                font-size: 0.9rem;
+
+              }
+            }
+          }
+        }
+
+        .products-list__button__link {
+
+
+          .arrow_right {
+          }
+
+          &:hover {
+            a {
+            }
+            .arrow_right {
+            }
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px)  {
+  .pages-page-3 {
+
+
+    .page-3__content {
+
+
+      .page-3__products-list {
+
+
+        .products-list__container {
+
+          .products-list__container__header {
+            h2 {
+
+
+            }
+
+            p {
+
+            }
+          }
+
+          .products-list__container__content {
+            flex-direction: row;
+
+
+            .products-list__container__content__item {
+              flex-grow: 1;
+
+              img {
+                max-width: 10rem;
+              }
+
+              h2 {
+                font-size: 0.9rem;
+
+              }
+            }
+          }
+        }
+
+        .products-list__button__link {
+
+
+          .arrow_right {
+          }
+
+          &:hover {
+            a {
+            }
+            .arrow_right {
+            }
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}

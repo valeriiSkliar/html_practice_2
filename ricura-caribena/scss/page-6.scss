@@ -22,7 +22,6 @@
   .pages-page-6__form-wrap {
     form {
       display: flex;
-      display: flex;
       flex-direction: column;
       gap: 1rem;
 
@@ -77,4 +76,202 @@
 
 .subscribe-result {
   display: none;
+}
+
+
+
+@media screen and (max-width: 479px) {
+  .pages-page-6 {
+
+    .pages-page-6__wrapper {
+      padding: 1rem 2rem;
+
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+
+    .pages-page-6__form-wrap {
+      form {
+
+
+        h2 {
+          font-size: 1.2rem;
+
+        }
+
+        span {
+          font-size: 0.7rem;
+
+        }
+
+        input[type="checkbox"] {
+
+        }
+        input {
+
+        }
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+
+  .pages-page-6 {
+
+    .pages-page-6__wrapper {
+
+      h1 {
+        padding-left: 3rem;
+
+      }
+    }
+
+    .pages-page-6__form-wrap {
+      padding: 0 3rem;
+      form {
+
+
+        h2 {
+
+        }
+
+        span {
+
+        }
+
+        input[type="checkbox"] {
+
+        }
+        input {
+
+        }
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)  {
+  .pages-page-6 {
+
+    .pages-page-6__wrapper {
+
+      h1 {
+        padding-left: 9rem;
+
+      }
+    }
+
+    .pages-page-6__form-wrap {
+      padding: 0 9rem;
+      form {
+
+
+        h2 {
+
+        }
+
+        span {
+
+        }
+
+        input[type="checkbox"] {
+
+        }
+        input {
+
+        }
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 992px) {
+  .pages-page-6 {
+
+    .pages-page-6__wrapper {
+
+      h1 {
+        padding-left: 12rem;
+
+      }
+    }
+
+    .pages-page-6__form-wrap {
+      padding: 0 12rem;
+
+      form {
+
+
+        h2 {
+
+        }
+
+        span {
+
+        }
+
+        input[type="checkbox"] {
+
+        }
+        input {
+
+        }
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+
+  .pages-page-6 {
+    height: fit-content;
+
+    .pages-page-6__wrapper {
+
+      h1 {
+        padding-left: 12rem;
+
+      }
+    }
+
+    .pages-page-6__form-wrap {
+      padding: 0 12rem;
+
+      form {
+
+
+        h2 {
+
+        }
+
+        span {
+
+        }
+
+        input[type="checkbox"] {
+
+        }
+        input {
+
+        }
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+
 }

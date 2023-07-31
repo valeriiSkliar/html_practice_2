@@ -43,10 +43,12 @@
 }
 
 .pages-page-2 {
+  min-width: 240px;
   width: 100%;
-  height: 65vh;
+  height: fit-content;
   background-color: #3e5d58;
   padding-top: 1.8rem;
+  padding-bottom: 3.2rem;
 }
 .pages-page-2 .page-2__content {
   width: 90%;
@@ -56,11 +58,11 @@
 }
 .pages-page-2 .page-2__content .page-2__content__stamp {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -5.5rem;
   max-width: 80px;
-  transform: rotate(49deg);
 }
 .pages-page-2 .page-2__content__text-block {
+  min-height: 2.6rem;
   margin-top: 4em;
   display: flex;
   flex-direction: column;
@@ -68,13 +70,21 @@
   align-items: center;
   gap: 1.5rem;
 }
-.pages-page-2 .page-2__content__text-block h1 {
+.pages-page-2 .page-2__content__text-block .text-block__header {
+  opacity: 0;
+  transform: translateY(75px);
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+}
+.pages-page-2 .page-2__content__text-block .text-block__header h1 {
   color: white;
   font-size: 2.6rem;
   font-weight: 600;
   text-align: center;
 }
 .pages-page-2 .page-2__content__text-block .page-2__content__text-block__link {
+  opacity: 0;
+  transform: translateY(75px);
   width: 50%;
   margin-top: 1em;
   display: flex;
@@ -83,8 +93,8 @@
   align-items: center;
   gap: 1.5rem;
   position: relative;
-  -webkit-transition: opacity 0.29s, -webkit-transform 0.29s;
-  transition: opacity 0.29s, transform 0.29s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 .pages-page-2 .page-2__content__text-block .page-2__content__text-block__link:hover a {
   transform: translateX(-60%);
@@ -97,6 +107,16 @@
   position: relative;
   text-align: center;
   transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .pages-page-2 .page-2__content .page-2__content__product-img .product-photo-container__image {
+    max-width: 90%;
+    margin: auto;
+  }
+  .pages-page-2 .page-2__content__text-block {
+    margin-top: 3rem;
+  }
 }
 
 /*# sourceMappingURL=page-2.css.map */

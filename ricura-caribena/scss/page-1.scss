@@ -16,14 +16,11 @@
     p {
       @extend .text-block-header;
       font-size: 3rem;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 2px;
       @media screen and (orientation: landscape) and (max-width: 479px){
         font-size: 2.8rem;
       }
-      //@media screen and (min-width: 480px) and (max-width: 680px){
-      //  font-size: 2.8rem;
-      //}
     }
     a {
       img {
@@ -39,8 +36,6 @@
       }
     }
   }
-
-
 }
 @keyframes move {
   0%, 100% {
@@ -49,4 +44,47 @@
   50% {
     transform: translateY(50px);  /* adjust as needed */
   }
+}
+
+@media screen and (max-width: 479px) {
+  .pages-page-1 {
+    .page-1__content{
+      p {
+
+        }
+
+      }
+      a {
+        img {
+
+        }
+
+      }
+    }
+  }
+
+@media screen and (max-width: 767px) {
+  .pages-page-1 {
+    .page-1__content{
+      p {
+
+
+      }
+
+    }
+    a {
+      img {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        right: 10rem;
+
+
+      }
+
+    }
+  }
+}
+@media( max-width: 991px) or (min-width: 992px) {
+
 }

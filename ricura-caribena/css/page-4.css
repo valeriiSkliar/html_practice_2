@@ -9,19 +9,19 @@
   line-height: 60px;
 }
 
-.button-with-arrow_right, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link .arrow_right {
+.button-with-arrow_right, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link .arrow_right {
   position: absolute;
   opacity: 0;
   left: 0;
   transition: all 0.5s ease;
 }
-.button-with-arrow_right img, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link .arrow_right img {
+.button-with-arrow_right img, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link .arrow_right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.button-with-arrow_right_hover, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link:hover .arrow_right {
+.button-with-arrow_right_hover, .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link:hover .arrow_right {
   opacity: 1;
   left: 60%;
 }
@@ -44,7 +44,7 @@
 
 .pages-page-4 {
   width: 100%;
-  height: 105vh;
+  height: 95vh;
 }
 .pages-page-4 .pages-page-4__wrapper {
   position: relative;
@@ -67,26 +67,40 @@
 .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content {
   position: absolute;
   width: 90%;
-  top: 10%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__names {
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__image {
+  max-width: 25rem;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
   display: none;
+  height: 50%;
+  color: white;
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description {
-  padding-top: 4rem;
-  width: 90%;
-  margin: auto;
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description {
+  height: 50%;
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description h1 {
-  font-size: 2.2rem;
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__description p {
-  padding-top: 1rem;
-  font-size: 1.2rem;
-  line-height: 25px;
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description p {
+  font-size: 1.1rem;
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link {
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link {
   width: 50%;
   padding-top: 4rem;
   margin: auto;
@@ -99,10 +113,10 @@
   -webkit-transition: opacity 0.29s, -webkit-transform 0.29s;
   transition: opacity 0.29s, transform 0.29s;
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link:hover a {
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link:hover a {
   transform: translateX(-50%);
 }
-.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__link a {
+.pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__description .founders__text-block__link a {
   color: #2fc774;
   text-transform: uppercase;
   font-weight: 600;
@@ -110,6 +124,45 @@
   position: relative;
   text-align: center;
   transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__image {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pages-page-4 {
+    height: 70vh;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
+    flex-direction: row;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pages-page-4 {
+    height: 70vh;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
+    flex-direction: row;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
+    display: block;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .pages-page-4 {
+    height: 115vh;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
+    flex-direction: row;
+  }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=page-4.css.map */
