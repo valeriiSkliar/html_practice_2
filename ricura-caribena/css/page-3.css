@@ -75,6 +75,12 @@
 .pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item img {
   margin: auto;
   max-width: 200px;
+  transform: scale(1);
+  transition: transform;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+.pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item img:hover {
+  transform: scale(1.1);
 }
 .pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item h2 {
   font-weight: 800;

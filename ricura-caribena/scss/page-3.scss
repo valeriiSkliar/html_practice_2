@@ -44,6 +44,12 @@
             img {
               margin: auto;
               max-width: 200px;
+              transform: scale(1);
+              transition: transform;
+              -webkit-transition:  -webkit-transform 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
             }
 
             h2 {

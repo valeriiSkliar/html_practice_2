@@ -342,6 +342,22 @@ header .header-container .header-container-item {
     margin-top: 3rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .pages-page-2 .page-2__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .pages-page-2 .page-2__content .page-2__content__product-img {
+    width: 40%;
+  }
+  .pages-page-2 .page-2__content .page-2__content__text-block {
+    width: 40%;
+  }
+  .pages-page-2 .page-2__content .page-2__content__stamp {
+    right: 5%;
+  }
+}
 .text-block-header, .pages-page-6 .pages-page-6__form-wrap form h2, .pages-page-6 h1, .pages-page-1 .page-1__content p {
   margin-top: 0px;
   padding-top: 0px;
@@ -419,6 +435,12 @@ header .header-container .header-container-item {
 .pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item img {
   margin: auto;
   max-width: 200px;
+  transform: scale(1);
+  transition: transform;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+.pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item img:hover {
+  transform: scale(1.1);
 }
 .pages-page-3 .page-3__content .page-3__products-list .products-list__container .products-list__container__content .products-list__container__content__item h2 {
   font-weight: 800;
@@ -656,6 +678,9 @@ header .header-container .header-container-item {
   .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
     flex-direction: row;
   }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__image .image-5 {
+    max-width: 80%;
+  }
   .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
     display: block;
   }
@@ -718,7 +743,7 @@ header .header-container .header-container-item {
 .pages-page-5 {
   font-family: Ubuntu, serif;
   width: 100%;
-  height: 85vh;
+  height: fit-content;
   background-color: #eee;
   min-height: 25rem;
 }
@@ -834,19 +859,24 @@ header .header-container .header-container-item {
 }
 @media screen and (min-width: 992px) {
   .pages-page-5 .pages-page-5__wrapper {
-    flex-direction: row;
+    flex-direction: column;
+    width: 60%;
+    gap: 1rem;
   }
   .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .pages-page-5 .pages-page-5__wrapper .pages-page-5__text-block p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+  }
+  .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album {
+    padding-bottom: 2rem;
   }
   .pages-page-5 .pages-page-5__wrapper .pages-page-5__wallpapers-album img {
-    max-width: 300px;
-    right: 20%;
-    top: 15%;
-    transform: translateX(-50%);
+    max-width: 500px;
+    padding-left: 5%;
+    top: 0;
+    transform: translateX(90%);
   }
 }
 @media screen and (max-width: 950px) and (orientation: landscape) {
@@ -1015,6 +1045,9 @@ header .header-container .header-container-item {
   }
   .pages-page-6 .pages-page-6__form-wrap {
     padding: 0 12rem;
+  }
+  .pages-page-6 .pages-page-6__form-wrap form input[type=submit] {
+    max-width: 15rem;
   }
 }
 @media screen and (max-width: 950px) and (orientation: landscape) {

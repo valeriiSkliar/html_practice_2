@@ -153,4 +153,55 @@
 
 }
 @media screen and (min-width: 992px) {
+  .pages-page-2 {
+
+
+    .page-2__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .page-2__content__product-img {
+        width: 40%;
+      }
+      .page-2__content__text-block {
+        width: 40%;
+      }
+      .page-2__content__stamp {
+        right: 5%;
+      }
+
+    }
+    .page-2__content__text-block {
+
+
+      .text-block__header {
+
+
+        h1 {
+
+        }
+      }
+
+      .page-2__content__text-block__link, {
+
+
+        .arrow_right{
+        }
+
+        &:hover {
+          a {
+          }
+
+          .arrow_right {
+          }
+        }
+
+        a {
+
+        }
+
+      }
+
+    }
+  }
 }

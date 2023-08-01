@@ -149,6 +149,9 @@
   .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders {
     flex-direction: row;
   }
+  .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__image .image-5 {
+    max-width: 80%;
+  }
   .pages-page-4 .pages-page-4__wrapper .pages-page-4__wrapper__content .pages-page-4__wrapper__content__founders .founders__text-block .founders__names {
     display: block;
   }
