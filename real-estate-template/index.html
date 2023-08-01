@@ -17,25 +17,93 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<header class="video-background">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="auto">
+      <source src="./video/Home%20Page-transcode.webm" type="video/webm">
+    </video>
+    <div class="logo-link">
+      <a href="/">
+        <img width="500" loading="lazy" src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819ca8c756fca3_Png%20bijela.png" alt="" style="will-change: opacity; opacity: 1;">
+        <img width="500" loading="lazy" src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819caef856fca4_Png%20boja.png" alt="" style="will-change: opacity; opacity: 0;">
+      </a>
+      <div class="scroll-icon">
+        <div class="scroll-border">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay">
+      <button class="header-item" id="burger-menu-button">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </button>
+    </div>
+    <div class="burger-menu">
+      <nav class="burger-menu__navigation">
+        <div class="burger-menu__navigation-list">
+          <div>For Sale</div>
+          <div>For Rent</div>
+          <div>Lifestyle</div>
+          <div>About us</div>
+          <div>Useful info</div>
+          <div>Contact Us</div>
+        </div>
+        <div class="burger-menu__contact-block">
+          <h4>Connect with us</h4>
+          <div class="burger-menu__social-links">
+            <img
+              src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c27bf56fce1_002-whatsapp.png"
+              loading="lazy" alt="">
+            <img
+              src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c861c56fcee_001-facebook-app-symbol.png"
+              loading="lazy" alt="">
+            <img
+              src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819cca2656fce6_001-instagram.png"
+              loading="lazy" alt="">
+            <img
+              src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c82b156fcf2_001-youtube-1.png"
+              loading="lazy" alt="">
+          </div>
+        </div>
+      </nav>
+      <div class="rent_or_buy">
+        <p>BUY</p>
+        <p>RENT</p>
+        <!--        <div style="color: rgb(255, 255, 255);">PROJECTS</div>-->
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </section>
+</main>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

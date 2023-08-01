@@ -1,0 +1,85 @@
+@import "video-background";
+header {
+
+  .logo-link {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    a {
+      margin: auto;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 1rem;
+        max-width: 50px;
+        min-height: 50px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .scroll-icon {
+      width: 1rem;
+      height: 2rem;
+      position: absolute;
+      top: 80vh;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: center;
+
+      &::after {
+        content: 'scroll';
+        color: white;
+        position: absolute;
+        bottom: -2rem;
+        left: -50%;
+      }
+
+      .scroll-border {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 3.5px;
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(255, 255, 255, 0.39) 1px 1px 10px;
+
+        .scroll-dot {
+          content: '';
+          background-color: white;
+          //position: absolute;
+          width: 100%;
+          height: 100%;
+          //padding: 0.1rem 0.35rem;
+          max-width: 10px;
+          max-height: 8px;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          transform-origin: center;
+          transition: all 0.3s;
+          animation: scroll-dot-move infinite linear 2s;
+        }
+      }
+    }
+
+  }
+
+}
+@keyframes scroll-dot-move {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}

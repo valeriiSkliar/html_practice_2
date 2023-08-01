@@ -1,0 +1,33 @@
+/* First, we set up the container. */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* This sets the height to fill the full viewport. */
+  overflow: hidden; /* This ensures that the video won't overflow the container. */
+}
+
+/* Then we style and position the video itself. */
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+/* We can also add a dark overlay for legibility purposes, if desired. */
+.video-background:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
