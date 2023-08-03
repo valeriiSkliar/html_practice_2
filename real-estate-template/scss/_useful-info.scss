@@ -1,0 +1,103 @@
+.useful-info {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: fit-content;
+  padding: .9rem;
+
+  .useful-info__wrapper {
+    //padding-top: 1.5rem;
+    .slide-from-left {
+      transition: all 0.9s;
+      transform: translateX(-100%);
+      padding: 1rem 0;
+      h2 {
+        font-family: 'Quicksand', sans-serif;
+        color: #cab48c;
+        font-size: 1.6rem;
+        font-weight: 800;
+      }
+    }
+    .useful-info__home-properties {
+      transition: all 0.9s;
+      transform: translateX(110%);
+      .collection-list-wrapper {
+        .collection-list__items{
+          display: flex;
+          flex-direction: column;
+          gap: .8rem;
+          .collection-list__item {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.dyn-item {
+  position: relative;
+  .dyn-item__link-block {
+    width: 100%;
+    min-height: 400px;
+    .dyn-item__property-box {
+      .dyn-item__image {
+        position: relative;
+        .image-5 {
+          position: relative;
+          object-fit: cover;
+          min-height: 400px;
+        }
+        .div-block-11 {
+          position: absolute;
+          z-index: 95;
+          color: black;
+          left: 0;
+          top: auto;
+          right: auto;
+          bottom: 0;
+          margin-top: auto;
+          margin-bottom: 15px;
+          width: 85%;
+          min-height: 80px;
+          min-width: 100px;
+          padding: 20px 20px;
+          background-color: #fff;
+
+          .heading-6 {
+            font-weight: 800;
+            margin: auto auto;
+            font-size: 1.1rem;
+          }
+
+        }
+      }
+      .dyn-item__details {
+        position: relative;
+        //z-index: 95;
+        //left: 0;
+        //bottom: 1rem;
+        //background: white;
+        //color: black;
+        .heading-7 {
+          display: none;
+          position: absolute;
+          z-index: 95;
+          left: 0;
+          bottom: 1rem;
+          background: white;
+          color: black;
+        }
+        .paragraph-3 {
+          display: none;
+        }
+        .button-2 {
+          display: none;
+          .paragraph-10 {
+
+          }
+        }
+      }
+    }
+
+  }
+}

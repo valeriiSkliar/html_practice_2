@@ -1,0 +1,50 @@
+.lifestyle {
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 6rem 1.5rem;
+  font-weight: 200;
+  z-index: 2;
+  color: #fff;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent), url(https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c201b56fd09_LifeStyle-1.jpg);
+  background-size: cover;
+  //background-position: center;
+  background-repeat: no-repeat;
+  .heading-5 {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: .8rem;
+    line-height: 22px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: .8rem;
+  }
+  .gradient {
+    //position: relative;
+    //background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent), url(https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c201b56fd09_LifeStyle-1.jpg);
+    //background-size: cover;
+    ////background-position: center;
+    //background-repeat: no-repeat;
+    //left: 0%;
+    //top: 0%;
+    //width: 100vw;
+    //height: 100%;
+    //z-index: 1;
+    //filter: brightness(50%);
+    //background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  }
+}

@@ -15,7 +15,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@200;400&family=Raleway:ital,wght@1,100&family=Ultra&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -25,27 +29,19 @@
 <body>
 
 <header class="video-background">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="auto">
-      <source src="./video/Home%20Page-transcode.webm" type="video/webm">
-    </video>
-    <div class="logo-link">
-      <a href="/">
-        <img width="500" loading="lazy" src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819ca8c756fca3_Png%20bijela.png" alt="" style="will-change: opacity; opacity: 1;">
-        <img width="500" loading="lazy" src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819caef856fca4_Png%20boja.png" alt="" style="will-change: opacity; opacity: 0;">
-      </a>
-      <div class="scroll-icon">
-        <div class="scroll-border">
-          <div class="scroll-dot"></div>
-        </div>
-      </div>
-    </div>
-    <div id="overlay">
-      <button class="header-item" id="burger-menu-button">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </button>
-    </div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="auto">
+    <source src="./video/Home%20Page-transcode.webm" type="video/webm">
+  </video>
+  <span>Your dream <b>home</b> here</span>
+  <div class="logo-link">
+    <a href="/">
+      <img width="500" loading="lazy"
+           src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819ca8c756fca3_Png%20bijela.png"
+           alt="" style="will-change: opacity; opacity: 1;">
+      <img width="500" loading="lazy"
+           src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819caef856fca4_Png%20boja.png"
+           alt="" style="will-change: opacity; opacity: 0;">
+    </a>
     <div class="burger-menu">
       <nav class="burger-menu__navigation">
         <div class="burger-menu__navigation-list">
@@ -81,12 +77,309 @@
       </div>
     </div>
   </div>
+  <div class="scroll-icon">
+    <div class="scroll-border">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
+  <div id="overlay">
+    <div class="header-item" >
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+  </div>
+
 </header>
 <main>
-  <section>
+  <section class="services">
+    <div class="services__buy">
+      <div class="service-wrapper">
+        <h1>Buy</h1>
+        <div class="div-block-7">
+          <div class="buy-block">
+            <h2 class="heading">
+              Let us help you find your place
+            </h2>
+            <p class="paragraph">
+              With extensive experience in Real Estate and Financial Services, we can help you find the
+              best solution tailored to your needs. Providing value for Sellers and Buyers and making sure all parties
+              involved are satisfied. We listen, we learn, we remember and armed with that knowledge we find the perfect
+              home for you. Share with us your desires and let us do the rest!
+            </p>
+            <a href="/buy"
+               class="button-2 w-button">CHECK&nbsp;availability
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services__rent">
+      <div class="service-wrapper">
+        <h1>Rent</h1>
+        <div class="div-block-7-2">
+          <div class="rent-block">
+            <h2
+              class="heading-2-2">
+              Choose your home and let us do the rest.
+            </h2>
+            <p
+              class="paragraph">
+              When staying at our rental residences, we provide the best of both worlds, service like a
+              five star hotel and all the benefits that come with renting a private place. When staying at our apartments
+              you get 24/7 customer service for all your needs! Come, experience! We are confident that you will love it
+              and
+              come back!
+            </p>
+            <a href="/rent" class="button-2-2 w-button">CHECK&nbsp;availability
+            </a>
+          </div>
 
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="lifestyle">
+    <div class="gradient">
+    </div>
+    <h1 class="heading-5">Lifestyle</h1>
+    <p class="paragraph-2">Tiny Montenegro, in the heart of Southern Europe, is famous for its Mediterranean climate
+      and stunning natural beauty. But what’s not well known is that Montenegro is also a magnet for thrill-seekers.
+      The mountainous landscape and azure beaches make the perfect backdrop for some adrenaline-pumping experiences…
+      all with a heavy dose of the wow factor! Let us show you some of our experiences and why we love Montenegro!
+    </p>
+    <a href="/lifestyle" class="button-2-2 w-button">read more</a>
+  </section>
+  <section class="useful-info">
+    <div class="useful-info__wrapper">
+      <div class="slide-from-left">
+        <h2
+          class="heading">Useful<br>info
+        </h2>
+      </div>
+      <div class="useful-info__home-properties">
+        <div class="collection-list-wrapper">
+          <div class="collection-list__items">
+            <div class="collection-list__item dyn-item">
+              <a
+                href="/usefull-info/things-to-consider-when-selling-the-property"
+                class="dyn-item__link-block">
+                <div class="dyn-item__property-box">
+                  <div class="dyn-item__image">
+                    <img
+                      src="https://assets.website-files.com/6245ee93f9819cddbe56fc8f/6245ee94f9819c4d2456fe02_Porto-Montenegro-Lifestyle-3.jpg"
+                      loading="lazy" alt=""
+                      class="image-5">
+                    <div class="div-block-11">
+                      <h4 class="heading-6">Things to consider when selling the property</h4>
+                    </div>
+                  </div>
+                  <div class="dyn-item__details">
+                    <h3 class="heading-7">Things to consider when selling the property</h3>
+                    <p class="paragraph-3">When choosing a Real Estate Broker to represent you and help you sell your
+                      property it is very important that you choose someone who knows the market in the area where
+                      your property is.
+                    </p>
+                    <div class="button-2">
+                      <p class="paragraph-10">Read more</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection-list__item dyn-item">
+              <a
+                href="/usefull-info/things-to-consider-when-selling-the-property"
+                class="dyn-item__link-block">
+                <div class="dyn-item__property-box">
+                  <div class="dyn-item__image">
+                    <img
+                      src="https://assets.website-files.com/6245ee93f9819cddbe56fc8f/6245ee94f9819c495056fdeb_Lustica_Bay_exteriors_06.jpg"
+                      loading="lazy" alt=""
+                      class="image-5">
+                    <div class="div-block-11">
+                      <h4 class="heading-6">Reasons to buy a property at Lustica Bay</h4>
+                    </div>
+                  </div>
+                  <div class="dyn-item__details">
+                    <h3 class="heading-7">Reasons to buy a property at Lustica Bay</h3>
+                    <p class="paragraph-3">‍A great position and connectivity, yet fully secluded and private!&nbsp;Lustica
+                      Bay is perfectly located and very well-connected by air, sea and ground.&nbsp;
+                    </p>
+                    <div class="button-2">
+                      <p class="paragraph-10">Read more</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection-list__item dyn-item">
+              <a
+                href="/usefull-info/things-to-consider-when-selling-the-property"
+                class="dyn-item__link-block">
+                <div class="dyn-item__property-box">
+                  <div class="dyn-item__image">
+                    <img
+                      src="https://assets.website-files.com/6245ee93f9819cddbe56fc8f/6245ee94f9819c244056fdea_Why-Invest-in-Montenegro---beauty%202.jpg"
+                      loading="lazy" alt=""
+                      class="image-5">
+                    <div class="div-block-11">
+                      <h4 class="heading-6">FAQs when Buying a Property in Montenegro</h4>
+                    </div>
+                  </div>
+                  <div class="dyn-item__details">
+                    <h3 class="heading-7">FAQs when Buying a Property in Montenegro</h3>
+                    <p class="paragraph-3">When buying a property in Montenegro, even though it’s an easy and
+                      straightforward process, there are still some questions you need an answer to.
+                    </p>
+                    <div class="button-2">
+                      <p class="paragraph-10">Read more</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
+<footer>
+  <div class="footer-content">
+    <div class="div-block-13">
+      <img
+        src="https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c3a9356fcba_logo-top.png"
+        loading="lazy"
+        alt="" class="image-6">
+      <p class="paragraph-footer">When you buy any property, whether it's for use as a holiday home, permanent home or
+        investment, you want to ensure you are using the right people to help you through the process. <br><br>With
+        extensive experience in Real Estate and Financial Services, we believe we can help you find the best solution
+        tailored to your needs.
+      </p>
+      <a href="/about-us" class="button-2-copy w-button">READ&nbsp;MORE</a>
+    </div>
+    <div class="mobilehide"></div>
+    <div class="div-block-14">
+      <h3 class="heading-8">Navigation</h3>
+      <a
+        href="/buy"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">For sale</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="/rent"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">For rent</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="/lifestyle"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Lifestyle</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="/useful-info"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Useful info</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="/about-us"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">About us</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="/contact-us"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Contact us</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+    </div>
+    <div class="div-block-14">
+      <h3 class="heading-8">Follow us</h3>
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Facebook</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Instagram</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+      <a
+        href="https://www.youtube.com"
+        target="_blank"
+        class="footer-link w-inline-block">
+        <h4 class="heading-18">Youtube</h4>
+        <div class="container-line-link">
+          <div class="line-link"></div>
+          <div class="line-link"></div>
+        </div>
+      </a>
+    </div>
+    <div class="div-block-14 w-form">
+      <form class="newsletter "
+            id="email-form-2"
+            name="email-form-2"
+            method="get">
+        <div class="_2-questions-wrap-copy-copy div-block-14">
+          <input
+            type="email"
+            class="text-field-inform-copy-copy-copy w-input"
+            maxlength="256" name="Email" data-name="Email"
+            placeholder="Your email" id="Email-3" required="">
+          <input
+            type="submit"
+            value="Subscribe"
+            data-wait="Please wait..."
+            class="button-3 in-form newsletr-copy w-button">
+        </div>
+      </form>
+      <div
+        class="w-form-done" tabindex="-1" role="region" aria-label="Email Form 2 success">
+      </div>
+      <div
+        class="error-message w-form-fail"
+        tabindex="-1"
+        role="region" >
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>

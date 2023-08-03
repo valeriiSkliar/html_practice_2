@@ -1,0 +1,124 @@
+.services {
+  position: relative;
+  width: 100%;
+  height: 155vh;
+
+  .services__buy {
+    -webkit-transition: all 3s;
+    transition: all 0.5s;
+    width: 100%;
+    height: 50%;
+
+    background-attachment: fixed;
+    background-position: 0 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-image: url('https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c82eb56fd02_Sale_Photo-p-1080.jpeg');
+
+    .service-wrapper {
+      h1 {
+        color: white;
+      }
+    }
+
+    .div-block-7 {
+      position: absolute;
+      opacity: 0;
+      top: 20rem;
+      right: 2rem;
+      padding: 2rem 2rem 4rem 5rem;
+      background-color: #fff;
+      box-shadow: #333333 2px 2px 15px;
+
+      .buy-block {
+        transform: translateX(-100%);
+        transition: all 0.9s;
+
+        h2 {
+          padding-bottom: 1rem;
+        }
+
+        p {
+          font-size: .8rem;
+          padding-bottom: 2rem;
+        }
+
+        a {
+          text-decoration: none;
+          border: #acaba9 solid 1px;
+          background-color: transparent;
+          color: #acaba9;
+          font-size: small;
+          padding: 1rem 1.5rem;
+        }
+      }
+    }
+  }
+
+  .services__rent {
+    width: 100%;
+    height: 50%;
+    background-color: #4d4d4d;
+    background-attachment: fixed;
+    background-position: 0 25rem;
+    background-repeat: no-repeat;
+    background-size: 143vw 76vh;
+    background-image: url('https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c338156fd03_Rent_Photo.jpg');
+
+    .div-block-7-2 {
+      opacity: 0;
+      background-color: #cab48c;
+      position: absolute;
+      top: 20rem;
+      left: 2rem;
+      padding: 2rem 2rem 4rem 5rem;
+      transition: all 0.9s;
+
+      .rent-block {
+        transform: translateX(100%);
+        transition: all 0.9s;
+
+        h2 {
+          padding-bottom: 1rem;
+          color: white;
+        }
+
+        p {
+          color: #505050;
+          font-size: .8rem;
+          padding-bottom: 2rem;
+        }
+
+        a {
+          text-decoration: none;
+          border: #eaeaea solid 1px;
+          background-color: transparent;
+          color: #eaeaea;
+          font-size: small;
+          padding: 1rem 1.5rem;
+        }
+      }
+    }
+  }
+
+  .service-wrapper {
+
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+    h1 {
+      padding: 2rem 2rem;
+      color: #cab48c;
+      z-index: 999;
+      position: relative;
+      top: 50%;
+      font-family: Raleway, serif;
+      font-size: 9rem;
+    }
+  }
+}
+
+
