@@ -5,3 +5,13 @@
 @import "main";
 @import "footer";
 @import "cta-mobile-contacts";
+
+body {
+  height: fit-content;
+  overflow: hidden;
+  &.body_overflow_hide {
+    height: 100vh;
+    overflow: hidden;
+
+  }
+}

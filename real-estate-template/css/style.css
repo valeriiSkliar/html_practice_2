@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@200;400&family=Quicksand:wght@300&family=Raleway:ital,wght@1,100&family=Ultra&display=swap");
 #overlay {
   z-index: 1000;
-  position: relative;
+  position: absolute;
   top: 1.5rem;
   left: 2rem;
   width: fit-content;
   height: fit-content;
+  transition: all 0.9s;
 }
 #overlay.hide {
   top: -100%;
@@ -96,6 +97,34 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .burger-menu {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .burger-menu {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .burger-menu {
+    width: 100%;
+  }
+  .burger-menu .burger-menu__navigation {
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .burger-menu .burger-menu__navigation .burger-menu__navigation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 /* First, we set up the container. */
 .video-background {
   position: relative;
@@ -147,6 +176,7 @@ header span {
 header .logo-link {
   width: 100%;
   height: fit-content;
+  max-height: 100px;
   min-height: 80px;
   position: fixed;
   top: 0;
@@ -225,6 +255,11 @@ header .scroll-icon .scroll-border .scroll-dot {
   100% {
     transform: translateY(0);
     opacity: 0;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  header {
+    padding-bottom: 2rem;
   }
 }
 .services {
@@ -331,7 +366,106 @@ header .scroll-icon .scroll-border .scroll-dot {
   font-size: 9rem;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .services .services__buy .div-block-7 {
+    top: 14rem;
+    left: 1rem;
+    width: 70%;
+  }
+  .services .services__buy .div-block-7 .buy-block p {
+    font-size: 1.1em;
+  }
+  .services .services__rent .div-block-7-2 {
+    top: 14rem;
+    right: 1rem;
+    width: 70%;
+  }
+  .services .services__rent .div-block-7-2 .rent-block p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services .services__buy .div-block-7 {
+    left: 1rem;
+    right: 20rem;
+  }
+  .services .services__rent .div-block-7-2 {
+    left: 20rem;
+    right: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services .services__buy {
+    background-size: 45% 60%;
+    background-position: left center;
+  }
+  .services .services__buy .service-wrapper h1 {
+    font-size: 10rem;
+  }
+  .services .services__buy .div-block-7 {
+    left: 1rem;
+    right: 60%;
+    top: 15rem;
+  }
+  .services .services__buy .div-block-7 .buy-block h2 {
+    font-size: 2rem;
+  }
+  .services .services__buy .div-block-7 .buy-block p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  .services .services__rent {
+    background-size: 45% 60%;
+    background-position: right center;
+  }
+  .services .services__rent .div-block-7-2 {
+    right: 1rem;
+    left: 60%;
+    top: 15rem;
+  }
+  .services .services__rent .div-block-7-2 .rent-block h2 {
+    font-size: 2rem;
+  }
+  .services .services__rent .div-block-7-2 .rent-block p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  .services .service-wrapper .service-buy {
+    padding-left: 70%;
+  }
+  .services .service-wrapper .service-rent {
+    padding-right: 30%;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .services .services__buy .service-wrapper {
+    position: relative;
+  }
+  .services .services__buy .service-wrapper h1 {
+    position: absolute;
+    right: 2rem;
+  }
+  .services .services__buy .div-block-7 {
+    top: 3rem;
+    left: 1rem;
+  }
+  .services .services__rent .service-wrapper {
+    position: relative;
+  }
+  .services .services__rent .service-wrapper h1 {
+    position: absolute;
+    left: 2rem;
+  }
+  .services .services__rent .div-block-7-2 {
+    top: 3rem;
+    right: 1rem;
+  }
+  .services .service-wrapper h1 {
+    font-size: 7rem;
+  }
+}
 .lifestyle {
+  height: fit-content;
   position: relative;
   font-family: "Quicksand", sans-serif;
   display: flex;
@@ -364,11 +498,63 @@ header .scroll-icon .scroll-border .scroll-dot {
   margin-top: 20px;
   font-size: 0.8rem;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 1.5rem;
+  }
+  .lifestyle .heading-5 {
+    padding: 0 8rem;
+  }
+  .lifestyle p {
+    padding: 0 8rem;
+    font-size: 1.1rem;
+  }
+  .lifestyle a {
+    margin-left: 8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 1.5rem;
+  }
+  .lifestyle .heading-5 {
+    padding: 0 8rem;
+  }
+  .lifestyle p {
+    padding: 0 8rem;
+    font-size: 1.1rem;
+  }
+  .lifestyle a {
+    margin-left: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 2.5rem;
+  }
+  .lifestyle .heading-5 {
+    font-size: 3rem;
+    padding: 0 10rem;
+  }
+  .lifestyle p {
+    padding: 0 10rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 1.6px;
+  }
+  .lifestyle a {
+    margin-left: 10rem;
+    font-size: 1.5rem;
+  }
+}
 .useful-info {
   font-family: "Quicksand", sans-serif;
   width: 100%;
   height: fit-content;
-  padding: 0.9rem;
+  padding: 5rem 0.9rem;
 }
 .useful-info .useful-info__wrapper .slide-from-left {
   transition: all 0.9s;
@@ -428,9 +614,9 @@ header .scroll-icon .scroll-border .scroll-dot {
 }
 .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details {
   position: relative;
+  display: none;
 }
 .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details .heading-7 {
-  display: none;
   position: absolute;
   z-index: 95;
   left: 0;
@@ -438,11 +624,91 @@ header .scroll-icon .scroll-border .scroll-dot {
   background: white;
   color: black;
 }
-.dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details .paragraph-3 {
-  display: none;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image .div-block-11 {
+    padding: 35px 20px;
+  }
 }
-.dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details .button-2 {
-  display: none;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image .div-block-11 {
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .useful-info .useful-info__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .useful-info .useful-info__wrapper .slide-from-left {
+    flex-grow: 3;
+  }
+  .useful-info .useful-info__wrapper .useful-info__home-properties {
+    flex-grow: 6;
+  }
+  .useful-info .useful-info__wrapper .useful-info__home-properties .collection-list-wrapper .collection-list__items {
+    flex-direction: row;
+  }
+  .useful-info .useful-info__wrapper .useful-info__home-properties .collection-list-wrapper .collection-list__items .collection-list__item {
+    flex: 1;
+  }
+  .dyn-item {
+    flex: 1;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box:hover .dyn-item__image {
+    transition: all 0.5s;
+    transform: translate(100%);
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image {
+    width: 100%;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image .image-5 {
+    position: relative;
+    object-fit: cover;
+    min-height: 400px;
+    min-width: 100%;
+    max-height: 400px;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image .div-block-11 {
+    padding: 30px 20px;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details {
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details .heading-7 {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__details .button-2 {
+    padding: 1rem 2rem;
+    border: 1px solid #565656;
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .useful-info .useful-info__wrapper .useful-info__home-properties .collection-list-wrapper .collection-list__items {
+    flex-direction: row;
+  }
+  .useful-info .useful-info__wrapper .useful-info__home-properties .collection-list-wrapper .collection-list__items .collection-list__item {
+    flex: 1;
+  }
+  .dyn-item .dyn-item__link-block .dyn-item__property-box .dyn-item__image .div-block-11 {
+    padding: 30px 20px;
+  }
 }
 footer {
   margin-top: 1rem;
@@ -527,6 +793,54 @@ footer .footer-content .w-form input[type=submit] {
   top: 3rem;
   width: 100%;
   background-color: white;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer .footer-content .div-block-13 p {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .footer-content .div-block-13 p {
+    width: 60%;
+  }
+  footer .footer-content .w-form input[type=submit] {
+    margin-top: 3px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  footer .footer-content .div-block-13 {
+    flex-grow: 1;
+  }
+  footer .footer-content .div-block-13 p {
+    width: 80%;
+  }
+  footer .footer-content .div-block-14 {
+    flex-grow: 2;
+  }
+  footer .footer-content .w-form {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  footer .footer-content .div-block-13 p {
+    width: 80%;
+  }
+}
+body {
+  height: fit-content;
+  overflow: hidden;
+}
+body.body_overflow_hide {
+  height: 100vh;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

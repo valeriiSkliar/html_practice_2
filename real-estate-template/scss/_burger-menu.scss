@@ -2,15 +2,16 @@
 
 #overlay {
   z-index: 1000;
-  position: relative;
+  position: absolute;
   top: 1.5rem;
   left: 2rem;
   width: fit-content;
   height: fit-content;
+  transition: all 0.9s;
+
 
   &.hide {
     top: -100%;
-
   }
 
   &.active {
@@ -114,3 +115,56 @@
   }
 }
 
+@media screen and (max-width: 479px) {}
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)  {
+  .burger-menu {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .burger-menu {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .burger-menu {
+
+    &.show {
+
+    }
+
+
+    width: 100%;
+
+
+    .burger-menu__navigation {
+      padding-top: 6rem;
+      width: 100%;
+
+      .burger-menu__navigation-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+
+      }
+      .burger-menu__contact-block {
+
+        .burger-menu__social-links {
+
+          img {
+          }
+        }
+      }
+    }
+    .rent_or_buy {
+    }
+  }
+
+}

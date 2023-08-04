@@ -1,4 +1,5 @@
 .lifestyle {
+  height: fit-content;
   position: relative;
   font-family: 'Quicksand', sans-serif;
   display: flex;
@@ -12,7 +13,6 @@
   color: #fff;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent), url(https://assets.website-files.com/6245ee93f9819c6dcc56fc72/6245ee93f9819c201b56fd09_LifeStyle-1.jpg);
   background-size: cover;
-  //background-position: center;
   background-repeat: no-repeat;
   .heading-5 {
     font-weight: 600;
@@ -46,5 +46,103 @@
     //z-index: 1;
     //filter: brightness(50%);
     //background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 1.5rem;
+
+    .heading-5 {
+      padding: 0 8rem;
+
+    }
+
+    p {
+      padding: 0 8rem;
+      font-size: 1.1rem;
+
+    }
+
+    a {
+      margin-left: 8rem;
+
+    }
+    .gradient {
+
+    }
+  }
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)  {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 1.5rem;
+
+    .heading-5 {
+      padding: 0 8rem;
+
+    }
+
+    p {
+      padding: 0 8rem;
+      font-size: 1.1rem;
+    }
+
+    a {
+      margin-left: 8rem;
+
+    }
+    .gradient {
+
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .lifestyle {
+    height: 80vh;
+    padding: 10rem 2.5rem;
+
+    .heading-5 {
+      font-size: 3rem;
+      padding: 0 10rem;
+
+    }
+
+    p {
+      padding: 0 10rem;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      letter-spacing: 1.6px;
+    }
+
+    a {
+      margin-left: 10rem;
+      font-size: 1.5rem;
+    }
+    .gradient {
+
+    }
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .lifestyle {
+
+    .heading-5 {
+    }
+
+    p {
+
+    }
+
+    a {
+
+    }
+    .gradient {
+
+    }
   }
 }

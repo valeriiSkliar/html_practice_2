@@ -121,4 +121,300 @@
   }
 }
 
+@media screen and (max-width: 479px) {
 
+}
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+  .services {
+
+
+    .services__buy {
+
+      .service-wrapper {
+        h1 {
+        }
+      }
+
+      .div-block-7 {
+        top: 14rem;
+        left: 1rem;
+        width: 70%;
+
+        .buy-block {
+
+
+          h2 {
+
+          }
+
+          p {
+            font-size: 1.1em;
+
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .services__rent {
+
+
+      .div-block-7-2 {
+        top: 14rem;
+        right: 1rem;
+        width: 70%;
+
+        .rent-block {
+
+
+          h2 {
+
+          }
+
+          p {
+            font-size: 1.1em;
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .service-wrapper {
+
+
+      h1 {
+
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and ( max-width: 991px)  {
+  .services {
+
+
+    .services__buy {
+
+      .service-wrapper {
+        h1 {
+        }
+      }
+
+      .div-block-7 {
+        left: 1rem;
+        right: 20rem;
+
+        .buy-block {
+
+
+          h2 {
+
+          }
+
+          p {
+
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .services__rent {
+
+
+      .div-block-7-2 {
+        left: 20rem;
+        right: 1rem;
+
+        .rent-block {
+
+
+          h2 {
+
+          }
+
+          p {
+
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .service-wrapper {
+
+
+      h1 {
+
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .services {
+
+
+
+
+    .services__buy {
+      background-size: 45% 60%;
+      background-position: left center;
+      .service-wrapper {
+        h1 {
+          font-size: 10rem;
+        }
+      }
+
+      .div-block-7 {
+        left: 1rem;
+        right: 60%;
+        top: 15rem;
+        .buy-block {
+
+
+          h2 {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 1rem;
+            padding-bottom: 2rem;
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .services__rent {
+      background-size: 45% 60%;
+      background-position: right center;
+
+
+      .div-block-7-2 {
+        right: 1rem;
+        left: 60%;
+        top: 15rem;
+
+
+        .rent-block {
+
+
+          h2 {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 1rem;
+            padding-bottom: 2rem;
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .service-wrapper {
+        .service-buy {
+          padding-left: 70%;
+        }
+      .service-rent {
+          padding-right: 30%;
+        }
+
+      h1 {
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .services {
+
+    .services__buy {
+
+
+      .service-wrapper {
+        position: relative;
+        h1 {
+          position: absolute;
+          right: 2rem;
+        }
+      }
+
+      .div-block-7 {
+        top: 3rem;
+        left: 1rem;
+
+        .buy-block {
+
+
+          h2 {
+
+          }
+
+          p {
+
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .services__rent {
+      .service-wrapper {
+        position: relative;
+        h1 {
+          position: absolute;
+          left: 2rem;
+        }
+      }
+
+      .div-block-7-2 {
+        top: 3rem;
+        right: 1rem;
+
+        .rent-block {
+
+
+          h2 {
+
+          }
+
+          p {
+
+          }
+
+          a {
+
+          }
+        }
+      }
+    }
+
+    .service-wrapper {
+
+      h1 {
+        font-size: 7rem;
+      }
+    }
+  }
+}
